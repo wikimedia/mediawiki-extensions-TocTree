@@ -24,7 +24,8 @@ function addEvent(obj, eventType, aFunction, isCapture) {
 	else if (obj.attachEvent) {  // Internet Explorer
 		return obj.attachEvent("on" + eventType, aFunction);
 	}
-	else return false;
+	else
+		return false;
 }
 
 function expandNode(aLink, expandIt) {
@@ -82,8 +83,7 @@ function setToggleNodes() {
 						if (tocTreeCollapsed) {
 							toggleLink.title = tocTreeExpandMsg;
 							toggleLink.appendChild(document.createTextNode("+"));
-						}
-						else {
+						} else {
 							toggleLink.title = tocTreeCollapseMsg;
 							toggleLink.appendChild(document.createTextNode("–"));
 						}

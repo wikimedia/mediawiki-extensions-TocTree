@@ -15,6 +15,10 @@ $messages['en'] = array(
 	'toctree-desc'     => 'Extension for the expansion and collapsing of the table of contents',
 );
 
+$messages['qqq'] = array(
+	'toctree-desc'     => '{{desc}}',
+);
+
 $messages['de'] = array(
 	'prefs-toctree'    => 'Inhaltsverzeichnis',
 	'tog-toc-expand'   => 'Vollständiges Inhaltsverzeichnis',

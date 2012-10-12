@@ -26,75 +26,76 @@ $wgExtensionMessagesFiles['TocTree'] = $dir . 'TocTree.i18n.php';
 $wgDefaultUserOptions ['toc-floated'] = false;
 $wgDefaultUserOptions ['toc-expand'] = false;
 
-$wgExtensionFunctions[] = 'wfSetupTocTree';
-
 $wgExtensionCredits['parserhook']['TocTree'] = array(
 	'path' => __FILE__,
 	'name' => 'TocTree',
 	'url' => 'http://www.wikivoyage.org/tech/TocTree_extension',
-	'description' => 'Extension for the expansion and collapsing of the table of contents',
 	'descriptionmsg' => 'toctree-desc',
 	'author' => 'Roland Unger',
-	'version' => '1.02'
+	'version' => '1.1'
 );
 
+$commonModuleInfo = array(
+	'localBasePath' => __DIR__ . '/modules',
+	'remoteExtPath' => 'TocTree/modules',
+);
+$wgResourceModules['ext.toctree'] = array(
+	'styles' => 'ext.toctree.css',
+	'scripts' => 'ext.toctree.js',
+) + $commonModuleInfo;
+$wgResourceModules['ext.toctree.collapsed'] = array(
+	'styles' => 'ext.toctree.collapsed.css',
+) + $commonModuleInfo;
+$wgResourceModules['ext.toctree.floated'] = array(
+	'styles' => 'ext.toctree.floated.css',
+) + $commonModuleInfo;
+
 $wgHooks['BeforePageDisplay'][] = 'wfTocTreeParserOutput';
+$wgHooks['MakeGlobalVariablesScript'][] = 'wfTocTreeGlobalVars';
+$wgHooks['GetPreferences'][] = 'onTocPreferences';
 
+/**
+ * Hook: BeforePageDisplay
+ *
+ * @param $out OutputPage
+ * @return bool
+ */
 function wfTocTreeParserOutput( &$out )  {
-	global $wgScriptPath, $wgOut, $wgUser, $wgJsMimeType;
-
-	$wgOut->addLink(
-		array(
-			'rel' => 'stylesheet',
-			'type' => 'text/css',
-			'href' => $wgScriptPath . '/extensions/TocTree/TocTree.css'
-		)
-	);
-
-	if ($wgUser->getOption('toc-floated', false ) ) {
-		$floated = "true";
-		$wgOut->addLink(
-			array(
-				'rel' => 'stylesheet',
-				'type' => 'text/css',
-				'href' => $wgScriptPath . '/extensions/TocTree/TocTreeFloated.css'
-			)
-		);
-	} else {
-		$floated = "false";
+	if ( $out->getUser()->getOption('toc-floated', false ) ) {
+		$out->addModuleStyles( 'ext.toctree.floated' );
 	}
-	if ($wgUser->getOption('toc-expand', false ) ) {
-		$collapsed = "false";
-	} else {
-		$collapsed = "true";
-		$wgOut->addLink(
-			array(
-				'rel' => 'stylesheet',
-				'type' => 'text/css',
-				'href' => $wgScriptPath . '/extensions/TocTree/TocTreeCollapsed.css'
-			)
-		);
+	if ( !$out->getUser()->getOption('toc-expand', false ) ) {
+		$out->addModuleStyles( 'ext.toctree.collapsed' );
 	}
 
-	$wgOut->addScript( 
-		"<script type=\"{$wgJsMimeType}\">" .
-		"var tocTreeExpandMsg = \"" . Xml::escapeJsString(wfMsg('showtoc')) . "\"; " .
-		"var tocTreeCollapseMsg = \"" . Xml::escapeJsString(wfMsg('hidetoc')) . "\"; " .
-		"var tocTreeCollapsed = " . $collapsed . "; " .
-		"var tocTreeFloatedToc = " . $floated . ";" .
-		"</script>\n" 
-	);
-
-	$wgOut->addScript( 
-		"<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}/extensions/TocTree/TocTree.js\">" .
-		"</script>\n" 
-	);
-
+	$out->addModules( 'ext.toctree' );
 	return true;
 }
 
-function onTocPreferences( $user, &$preferences ) {
+/**
+ * Hook: MakeGlobalVariablesScript
+ *
+ * @param $vars array
+ * @param $out OutputPage
+ * @return bool
+ */
+function wfTocTreeGlobalVars( &$vars, $out ) {
+	global $wgUser;
+	$vars['tocTreeExpandMsg'] = wfMsg( 'showtoc' );
+	$vars['tocTreeCollapseMsg'] = wfMsg( 'hidetoc' );
+	$vars['tocTreeCollapsed'] = $out->getUser()->getOption('toc-floated', false );
+	$vars['tocTreeFloatedToc'] = !$out->getUser()->getOption('toc-expand', false );
+	return true;
+}
 
+/**
+ * Hook: GetPreferences
+ *
+ * @param $user User
+ * @param $preferences array
+ * @return bool
+ */
+function onTocPreferences( $user, &$preferences ) {
 	$preferences['toc-expand'] = array(
 		'type' => 'toggle',
 		'label-message' => 'tog-toc-expand',
@@ -107,12 +108,5 @@ function onTocPreferences( $user, &$preferences ) {
 		'section' => 'misc/toctree',
 	);
 
-	return true;
-}
- 
-function wfSetupTocTree() {
-	global $wgHooks;
-
-	$wgHooks['GetPreferences'][] = 'onTocPreferences';
 	return true;
 }
