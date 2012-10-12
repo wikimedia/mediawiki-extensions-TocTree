@@ -35,7 +35,8 @@ $wgExtensionCredits['parserhook']['TocTree'] = array(
 	'description' => 'Extension for the expansion and collapsing of the table of contents',
 	'descriptionmsg' => 'toctree-desc',
 	'author' => 'Roland Unger',
-	'version' => '1.02' );
+	'version' => '1.02'
+);
 
 $wgHooks['BeforePageDisplay'][] = 'wfTocTreeParserOutput';
 
@@ -50,7 +51,7 @@ function wfTocTreeParserOutput( &$out )  {
 		)
 	);
 
-	if ($wgUser->getOption('toc-floated', false)) {
+	if ($wgUser->getOption('toc-floated', false ) ) {
 		$floated = "true";
 		$wgOut->addLink(
 			array(
@@ -59,10 +60,12 @@ function wfTocTreeParserOutput( &$out )  {
 				'href' => $wgScriptPath . '/extensions/TocTree/TocTreeFloated.css'
 			)
 		);
+	} else {
+		$floated = "false";
 	}
-	else $floated = "false";
-	if ($wgUser->getOption('toc-expand', false)) $collapsed = "false";
-	else {
+	if ($wgUser->getOption('toc-expand', false ) ) {
+		$collapsed = "false";
+	} else {
 		$collapsed = "true";
 		$wgOut->addLink(
 			array(
@@ -113,5 +116,3 @@ function wfSetupTocTree() {
 	$wgHooks['GetPreferences'][] = 'onTocPreferences';
 	return true;
 }
-
-?>

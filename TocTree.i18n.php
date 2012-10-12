@@ -36,5 +36,3 @@ $messages['pl'] = array(
 	'tog-toc-expand'   => 'Rozwijanie spisu treści',
 	'tog-toc-floated'  => 'Opływanie spisu treści',
 );
-
-?>

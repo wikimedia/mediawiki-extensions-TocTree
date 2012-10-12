@@ -11,19 +11,19 @@
 */
 
 #toc {
- float: left;
- margin: 0 2em 1em 0;
- max-width: 20em;
+	float: left;
+	margin: 0 2em 1em 0;
+	max-width: 20em;
 }
 
 body.rtl #toc {
- float: right;
- margin: 0 0 1em 2em;
- max-width: 20em;
+	float: right;
+	margin: 0 0 1em 2em;
+	max-width: 20em;
 }
 
 .noFloat #toc, body.rtl .noFloat #toc {
- float: none;
- margin: 0;
- max-width: auto;
+	float: none;
+	margin: 0;
+	max-width: auto;
 }

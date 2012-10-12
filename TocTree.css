@@ -11,55 +11,55 @@
 */
 
 #toc .tocUl {
- padding-left: 2em;
+	padding-left: 2em;
 }
 
 body.rtl #toc .tocUl {
- padding-right: 2em;
+	padding-right: 2em;
 }
 
 #toc.tocFloat {
- float: left;
- margin: 0 2em 1em 0;
- width: 20em;
+	float: left;
+	margin: 0 2em 1em 0;
+	width: 20em;
 }
 
 body.rtl #toc.tocFloat {
- float: right;
- margin: 0 0 1em 2em;
+	float: right;
+	margin: 0 0 1em 2em;
 }
 
 .toggleSymbol {
- color: #0000ff;
- cursor: pointer;
+	color: #0000ff;
+	cursor: pointer;
 }
 
 .toggleNode {
- position: absolute;
- top: 0;
- left: -2em;
+	position: absolute;
+	top: 0;
+	left: -2em;
 }
 
 body.rtl .toggleNode {
- right: 2em;
+	right: 2em;
 }
 
 .noFloat #toc.tocFloat, body.rtl .noFloat #toc.tocFloat {
- float: none;
- margin: 0;
- width: auto;
+	float: none;
+	margin: 0;
+	width: auto;
 }
 
 @media print {
- #toc.tocFloat {
-  background: #ffffff;
- }
+	#toc.tocFloat {
+		background: #ffffff;
+	}
 
- .toggleNode {
-  display: none;
- }
+	.toggleNode {
+		display: none;
+	}
 
- #toc .tocUl {
-  padding-left: 0;
- }
+	#toc .tocUl {
+		padding-left: 0;
+	}
 }
