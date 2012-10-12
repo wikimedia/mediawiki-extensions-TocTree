@@ -1,0 +1,65 @@
+/*
+ * Style sheets for the TocTree extension 
+ * to display the toc structure
+ *
+ * @package MediaWiki
+ * @subpackage Extensions
+ * @author Roland Unger
+ * @copyright Â© 2007 Roland Unger
+ * v1.01 of 2007/11/13
+ * @licence GNU General Public Licence 2.0 or later
+*/
+
+#toc .tocUl {
+ padding-left: 2em;
+}
+
+body.rtl #toc .tocUl {
+ padding-right: 2em;
+}
+
+#toc.tocFloat {
+ float: left;
+ margin: 0 2em 1em 0;
+ width: 20em;
+}
+
+body.rtl #toc.tocFloat {
+ float: right;
+ margin: 0 0 1em 2em;
+}
+
+.toggleSymbol {
+ color: #0000ff;
+ cursor: pointer;
+}
+
+.toggleNode {
+ position: absolute;
+ top: 0;
+ left: -2em;
+}
+
+body.rtl .toggleNode {
+ right: 2em;
+}
+
+.noFloat #toc.tocFloat, body.rtl .noFloat #toc.tocFloat {
+ float: none;
+ margin: 0;
+ width: auto;
+}
+
+@media print {
+ #toc.tocFloat {
+  background: #ffffff;
+ }
+
+ .toggleNode {
+  display: none;
+ }
+
+ #toc .tocUl {
+  padding-left: 0;
+ }
+}
