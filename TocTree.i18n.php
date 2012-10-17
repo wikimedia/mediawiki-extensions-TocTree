@@ -15,28 +15,48 @@ $messages['en'] = array(
 	'toctree-desc'     => 'Extension for the expansion and collapsing of the table of contents',
 );
 
+/** Message documentation (Message documentation)
+ * @author Raymond
+ */
 $messages['qqq'] = array(
-	'toctree-desc'     => '{{desc}}',
+	'prefs-toctree' => 'Section header in misc. preferences.',
+	'tog-toc-expand' => "[[Special:Preferences]], tab 'Misc'. Offers user a choice to expand the table of content",
+	'tog-toc-floated' => "[[Special:Preferences]], tab 'Misc'. Offers user a choice to show the table of content floated",
+	'toctree-desc' => '{{desc}}',
 );
 
+/** German (Deutsch) */
 $messages['de'] = array(
-	'prefs-toctree'    => 'Inhaltsverzeichnis',
-	'tog-toc-expand'   => 'Vollständiges Inhaltsverzeichnis',
-	'tog-toc-floated'  => 'Umflossenes Inhaltsverzeichnis',
-	'toctree-desc'     => 'Erweiterung zum Ein- und Ausklappen des Inhaltsverzeichnisses',
+	'prefs-toctree' => 'Inhaltsverzeichnis',
+	'tog-toc-expand' => 'Vollständiges Inhaltsverzeichnis',
+	'tog-toc-floated' => 'Umflossenes Inhaltsverzeichnis',
+	'toctree-desc' => 'Erweiterung zum Ein- und Ausklappen des Inhaltsverzeichnisses',
 );
 
+/** French (français) */
 $messages['fr'] = array(
-	'tog-toc-expand'   => 'Etendre le sommaire',
-	'tog-toc-floated'  => 'Sommaire flottant',
+	'tog-toc-expand' => 'Etendre le sommaire',
+	'tog-toc-floated' => 'Sommaire flottant',
 );
 
+/** Italian (italiano) */
 $messages['it'] = array(
-	'tog-toc-expand'   => 'Espandi il sommario',
-	'tog-toc-floated'  => 'Floated table of contents',
+	'tog-toc-expand' => 'Espandi il sommario',
+	'tog-toc-floated' => 'Floated table of contents',
 );
 
-$messages['pl'] = array(
-	'tog-toc-expand'   => 'Rozwijanie spisu treści',
-	'tog-toc-floated'  => 'Opływanie spisu treści',
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'prefs-toctree' => '目次',
+	'tog-toc-expand' => '目次を展開',
+	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
 );
+
+/** Polish (polski) */
+$messages['pl'] = array(
+	'tog-toc-expand' => 'Rozwijanie spisu treści',
+	'tog-toc-floated' => 'Opływanie spisu treści',
+);
+
