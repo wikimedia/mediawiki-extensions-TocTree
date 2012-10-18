@@ -39,10 +39,24 @@ $messages['fr'] = array(
 	'tog-toc-floated' => 'Sommaire flottant',
 );
 
-/** Italian (italiano) */
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'prefs-toctree' => 'Zapis wobsaha',
+	'tog-toc-expand' => 'Zapis wobsaha rozfałdować',
+	'tog-toc-floated' => 'Wobběhany zapis wobsaha',
+	'toctree-desc' => 'Rozšěrjenje za rozfałdowanje a fałdowanje zapisa wobsaha',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
 $messages['it'] = array(
+	'prefs-toctree' => 'Indice',
 	'tog-toc-expand' => 'Espandi il sommario',
 	'tog-toc-floated' => 'Floated table of contents',
+	'toctree-desc' => "Estensione per l'espansione e la compressione dell'indice dei contenuti",
 );
 
 /** Japanese (日本語)
@@ -52,6 +66,16 @@ $messages['ja'] = array(
 	'prefs-toctree' => '目次',
 	'tog-toc-expand' => '目次を展開',
 	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'prefs-toctree' => 'Содржина',
+	'tog-toc-expand' => 'Расклопи содржина',
+	'tog-toc-floated' => 'Содржина со променлива положба',
+	'toctree-desc' => 'Додаток за расклоп и слопување на содржината',
 );
 
 /** Polish (polski) */
