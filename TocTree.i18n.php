@@ -33,10 +33,30 @@ $messages['de'] = array(
 	'toctree-desc' => 'Erweiterung zum Ein- und Ausklappen des Inhaltsverzeichnisses',
 );
 
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'prefs-toctree' => 'Tabla de contenidos',
+	'tog-toc-expand' => 'Expandir la tabla de contenidos',
+	'tog-toc-floated' => 'Tabla de contenidos flotante',
+	'toctree-desc' => 'Extensión para la expansión y contracción de la tabla de contenidos',
+);
+
 /** French (français) */
 $messages['fr'] = array(
 	'tog-toc-expand' => 'Etendre le sommaire',
 	'tog-toc-floated' => 'Sommaire flottant',
+);
+
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'prefs-toctree' => 'Táboa de contidos',
+	'tog-toc-expand' => 'Expandir a táboa de contidos',
+	'tog-toc-floated' => 'Táboa de contidos flotante',
+	'toctree-desc' => 'Extensión para a expansión e contracción da táboa de contidos',
 );
 
 /** Upper Sorbian (hornjoserbsce)
