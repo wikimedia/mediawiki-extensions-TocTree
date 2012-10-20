@@ -25,6 +25,14 @@ $messages['qqq'] = array(
 	'toctree-desc' => '{{desc}}',
 );
 
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'prefs-toctree' => 'Зьмест',
+	'tog-toc-expand' => 'Разгарнуць зьмест',
+);
+
 /** German (Deutsch) */
 $messages['de'] = array(
 	'prefs-toctree' => 'Inhaltsverzeichnis',
