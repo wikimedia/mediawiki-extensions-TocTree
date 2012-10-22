@@ -33,7 +33,8 @@ $messages['be-tarask'] = array(
 	'tog-toc-expand' => 'Разгарнуць зьмест',
 );
 
-/** German (Deutsch) */
+/** German (Deutsch)
+ */
 $messages['de'] = array(
 	'prefs-toctree' => 'Inhaltsverzeichnis',
 	'tog-toc-expand' => 'Vollständiges Inhaltsverzeichnis',
@@ -51,7 +52,8 @@ $messages['es'] = array(
 	'toctree-desc' => 'Extensión para la expansión y contracción de la tabla de contenidos',
 );
 
-/** French (français) */
+/** French (français)
+ */
 $messages['fr'] = array(
 	'tog-toc-expand' => 'Etendre le sommaire',
 	'tog-toc-floated' => 'Sommaire flottant',
@@ -96,6 +98,13 @@ $messages['ja'] = array(
 	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'prefs-toctree' => 'Inhaltsverzeechnes',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -106,9 +115,16 @@ $messages['mk'] = array(
 	'toctree-desc' => 'Додаток за расклоп и слопување на содржината',
 );
 
-/** Polish (polski) */
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'prefs-toctree' => 'Inhoudsopgave',
+);
+
+/** Polish (polski)
+ */
 $messages['pl'] = array(
 	'tog-toc-expand' => 'Rozwijanie spisu treści',
 	'tog-toc-floated' => 'Opływanie spisu treści',
 );
-
