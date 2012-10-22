@@ -98,6 +98,16 @@ $messages['ja'] = array(
 	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'prefs-toctree' => '목차',
+	'tog-toc-expand' => '목차 펼치기',
+	'tog-toc-floated' => '목차 띄우기',
+	'toctree-desc' => '목차의 펼치기와 접기를 위한 확장 기능',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
