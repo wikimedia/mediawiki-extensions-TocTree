@@ -50,6 +50,25 @@ body.rtl .toggleNode {
 	width: auto;
 }
 
+/* toc-floated CSS */
+#toc.tocFloat {
+	float: left;
+	margin: 0 2em 1em 0;
+	max-width: 20em;
+}
+
+body.rtl #toc.tocFloat {
+	float: right;
+	margin: 0 0 1em 2em;
+	max-width: 20em;
+}
+
+.noFloat #toc.tocFloat, body.rtl .noFloat.tocFloat #toc {
+	float: none;
+	margin: 0;
+	max-width: auto;
+}
+
 @media print {
 	#toc.tocFloat {
 		background: #ffffff;

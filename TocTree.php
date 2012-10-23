@@ -1,6 +1,6 @@
 <?php
 /*
- * Setup and Hooks for the TocTree extension for the Wikivoyage project
+ * Setup and Hooks for the TocTree extension
  *
  * @package MediaWiki
  * @subpackage Extensions
@@ -14,41 +14,42 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
-# Default user options
-$wgDefaultUserOptions ['toc-floated'] = false;
-$wgDefaultUserOptions ['toc-expand'] = false;
+// extension i18n
+$wgExtensionMessagesFiles['TocTree'] = __DIR__ . '/TocTree.i18n.php';
 
-$wgExtensionCredits['parserhook']['TocTree'] = array(
-	'path' => __FILE__,
-	'name' => 'TocTree',
-	'url' => 'http://www.wikivoyage.org/tech/TocTree_extension',
-	'descriptionmsg' => 'toctree-desc',
-	'author' => 'Roland Unger',
-	'version' => '1.1'
-);
+// autoloader
+$wgAutoloadClasses['TocTreeHooks'] = __DIR__ . '/TocTree.hooks.php';
 
-$dir = __DIR__ . '/';
-$wgAutoloadClasses['TocTreeHooks'] = $dir . 'TocTree.hooks.php';
-$wgExtensionMessagesFiles['TocTree'] = $dir . 'TocTree.i18n.php';
+// hooks
+$wgHooks['BeforePageDisplay'][] = 'TocTreeHooks::wfTocTreeParserOutput';
+$wgHooks['GetPreferences'][] = 'TocTreeHooks::onTocPreferences';
 
+// default user options
+$wgDefaultUserOptions['toc-floated'] = false;
+$wgDefaultUserOptions['toc-expand'] = false;
+
+// resources
 $commonModuleInfo = array(
 	'localBasePath' => __DIR__ . '/modules',
 	'remoteExtPath' => 'TocTree/modules',
 );
-
-$wgResourceModules['ext.toctree'] = array(
+$wgResourceModules['ext.toctree'] = $commonModuleInfo + array(
 	'styles' => 'ext.toctree.css',
 	'scripts' => 'ext.toctree.js',
-) + $commonModuleInfo;
-
-$wgResourceModules['ext.toctree.collapsed'] = array(
+);
+$wgResourceModules['ext.toctree.collapsed'] = $commonModuleInfo + array(
 	'styles' => 'ext.toctree.collapsed.css',
-) + $commonModuleInfo;
-
-$wgResourceModules['ext.toctree.floated'] = array(
+);
+$wgResourceModules['ext.toctree.floated'] = $commonModuleInfo + array(
 	'styles' => 'ext.toctree.floated.css',
-) + $commonModuleInfo;
+);
 
-$wgHooks['BeforePageDisplay'][] = 'TocTreeHooks::parserOutput';
-$wgHooks['MakeGlobalVariablesScript'][] = 'TocTreeHooks::globalVars';
-$wgHooks['GetPreferences'][] = 'TocTreeHooks::preferences';
+// credits
+$wgExtensionCredits['parserhook']['TocTree'] = array(
+	'path' => __FILE__,
+	'name' => 'TocTree',
+	'url' => '//www.mediawiki.org/wiki/Extension:TocTree',
+	'descriptionmsg' => 'toctree-desc',
+	'author' => array( 'Roland Unger', 'Matthias Mullie' ),
+	'version' => '1.11'
+);

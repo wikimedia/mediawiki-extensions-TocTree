@@ -1,126 +1,84 @@
 /*
- * JavaScript functions for the TocTree extension 
+ * JavaScript functions for the TocTree extension
  * to display the toc structure
  *
  * @package MediaWiki
  * @subpackage Extensions
  * @author Roland Unger
+ * @author Matthias Mullie
  * @copyright © 2007 Roland Unger
  * v1.0 of 2007/11/04
  * @licence GNU General Public Licence 2.0 or later
  */
 
-/* Variables defined by php script and added to the header
- var tocTreeExpandMsg = "Expand";
- var tocTreeCollapseMsg = "Collapse";
- var tocTreeCollapsed = true;
- var tocTreeFloatedToc = true; */
+mw.tocTree = {
+	processClickEvent: function ( event ) {
+		var $ul = $( 'ul', $( this ).parent().parent() );
+		$ul.toggle();
 
-'use strict';
+		if ( $ul.is( ':visible' ) ) {
+			$( this )
+				.text( '-' )
+				.attr( 'title', mw.msg( 'hidetoc' ) );
+		} else {
+			$( this )
+				.text( '+' )
+				.attr( 'title', mw.msg( 'showtoc' ) );
+		}
+	},
 
-function addEvent( obj, eventType, aFunction, isCapture ) {
-	if ( obj.addEventListener ) {  // W3C DOM
-		obj.addEventListener( eventType, aFunction, isCapture );
-		return true;
-	} else if ( obj.attachEvent ) {  // Internet Explorer
-		return obj.attachEvent( "on" + eventType, aFunction );
-	} else {
-		return false;
-	}
-}
+	init: function() {
+		var $toc = $( '#toc' );
 
-function expandNode( aLink, expandIt ) {
-	var ul = aLink.parentNode.parentNode.getElementsByTagName( "ul" );
-	if ( ul.length > 0 ) {
-		for ( var i = 0; i < ul.length; i++ ) {
-			if ( expandIt ) {
-				ul[i].style.display = "block";
-			} else {
-				ul[i].style.display = "none";
+		if ( $toc.length > 0 ) {
+			if ( mw.user.options.get( 'toc-floated' ) ) {
+				$toc.addClass( 'tocFloat' );
 			}
-		}
-	}
-}
+			$toc.attr( 'cellspacing', 0 );
 
-function processClickEvent( event ) {
-	var toggleLink = null;
-	if ( event.type === "click" ) {
-		// Internet Explorer
-		if ( event.srcElement ) {
-			toggleLink = event.srcElement;
-		}
+			var $mainUl = $( 'ul:first', $toc );
+			var $mainList = $( 'li', $toc );
 
-		// W3C DOM
-		if ( event.currentTarget ) {
-			toggleLink = event.currentTarget;
-		}
+			$mainList.each( function( i ) {
+				if ( $( this ).hasClass( 'toclevel-1' ) ) {
+					$( this ).css( 'position', 'relative' );
+					var $subList = $( 'ul', $( this ) );
 
-		if ( toggleLink !== null ) {
-			if ( toggleLink.innerHTML === "+" ) {
-				toggleLink.innerHTML = "–";
-				toggleLink.title = tocTreeCollapseMsg;
-				expandNode( toggleLink, true );
-			} else {
-				toggleLink.innerHTML = "+";
-				toggleLink.title = tocTreeExpandMsg;
-				expandNode( toggleLink, false );
-			}
-		}
-	}
-}
-
-function setToggleNodes() {
-	var toc, mainUl, mainList, subList, toggleLink, toggleSpan, mlClass;
-
-	if ( document.getElementById ) {
-		toc = document.getElementById( "toc" );
-		if ( toc !== null ) {
-			if ( tocTreeFloatedToc ) {
-				toc.className = toc.className + " tocFloat";
-			}
-			toc.cellSpacing = 0;
-			mainUl = toc.getElementsByTagName( "ul" )[0];
-			mainList = toc.getElementsByTagName( "li" );
-			if ( mainList.length > 0 ) {
-				for ( var i = 0; i < mainList.length; i++ ) {
-					mlClass = mainList[i].className;
-					if ( mlClass.indexOf( "toclevel-1" ) !== -1 ) {
-						mainList[i].style.position = "relative";
-						subList = mainList[i].getElementsByTagName( "ul" );
-						if ( subList.length > 0 ) {
-							if ( mainUl !== null ) {
-								mainUl.className = "tocUl";
-							}
-
-							toggleLink = document.createElement( "span" );
-							toggleLink.className = "toggleSymbol";
-							if ( tocTreeCollapsed ) {
-								toggleLink.title = tocTreeExpandMsg;
-								toggleLink.appendChild( document.createTextNode( "+" ) );
-							} else {
-								toggleLink.title = tocTreeCollapseMsg;
-								toggleLink.appendChild( document.createTextNode( "–" ) );
-							}
-							addEvent( toggleLink, "click", processClickEvent, false );
-							toggleSpan = document.createElement( "span" );
-							toggleSpan.className = "toggleNode";
-							toggleSpan.appendChild( document.createTextNode( '[' ) );
-							toggleSpan.appendChild( toggleLink );
-							toggleSpan.appendChild( document.createTextNode( ']' ) );
-							mainList[i].insertBefore( toggleSpan, mainList[i].firstChild );
-
-							if ( tocTreeCollapsed ) {
-								for ( j = 0; j < subList.length; j++ ) {
-									subList[j].style.display = "none";
-								}
-							}
+					if ( $subList.length > 0 ) {
+						if ( $mainUl.length > 0 ) {
+							$mainUl.addClass( 'tocUl' );
 						}
+
+						var $toggleLink = $( '<span />' ).addClass( 'toggleSymbol' );
+
+						if ( mw.user.options.get( 'toc-expand' ) ) {
+							$toggleLink
+								.text( '-' )
+								.attr( 'title', mw.msg( 'hidetoc' ) );
+
+							$subList.show();
+						} else {
+							$toggleLink
+								.text( '+' )
+								.attr( 'title', mw.msg( 'showtoc' ) );
+
+							$subList.hide();
+						}
+						$toggleLink.click( mw.tocTree.processClickEvent );
+
+						var $toggleSpan = $( '<span />' ).addClass( 'toggleNode' );
+						$toggleSpan.append( '[', $toggleLink, ']' );
+
+						$( this ).prepend( $toggleSpan );
 					}
 				}
-			}
+			} );
 		}
-	}
-	return true;
-}
 
-addOnloadHook( setToggleNodes );
+		return true;
+	}
+};
+
+jQuery( function( $ ) {
+	mw.tocTree.init();
+} );

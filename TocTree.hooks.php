@@ -7,44 +7,23 @@ class TocTreeHooks {
 	/**
 	 * Hook: BeforePageDisplay
 	 *
-	 * @param $out OutputPage
+	 * @param OutputPage $out
 	 * @return bool
 	 */
-	public static function parserOutput( &$out ) {
-		if ( $out->getUser()->getOption( 'toc-floated', false ) ) {
-			$out->addModuleStyles( 'ext.toctree.floated' );
-		}
-		if ( !$out->getUser()->getOption( 'toc-expand', false ) ) {
-			$out->addModuleStyles( 'ext.toctree.collapsed' );
-		}
-
+	public static function wfTocTreeParserOutput( OutputPage &$out )  {
 		$out->addModules( 'ext.toctree' );
-		return true;
-	}
 
-	/**
-	 * Hook: MakeGlobalVariablesScript
-	 *
-	 * @param $vars array
-	 * @param $out OutputPage
-	 * @return bool
-	 */
-	public static function globalVars( &$vars, $out ) {
-		$vars['tocTreeExpandMsg'] = $out->msg( 'showtoc' )->text();
-		$vars['tocTreeCollapseMsg'] = $out->msg( 'hidetoc' )->text();
-		$vars['tocTreeCollapsed'] = $out->getUser()->getOption( 'toc-floated', false );
-		$vars['tocTreeFloatedToc'] = !$out->getUser()->getOption( 'toc-expand', false );
 		return true;
 	}
 
 	/**
 	 * Hook: GetPreferences
 	 *
-	 * @param $user User
-	 * @param $preferences array
+	 * @param User $user
+	 * @param array $preferences
 	 * @return bool
 	 */
-	public static function preferences( $user, &$preferences ) {
+	public static function onTocPreferences( User $user, array &$preferences ) {
 		$preferences['toc-expand'] = array(
 			'type' => 'toggle',
 			'label-message' => 'toctree-tog-expand',
