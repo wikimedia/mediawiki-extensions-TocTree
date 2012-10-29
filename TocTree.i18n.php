@@ -34,12 +34,13 @@ $messages['be-tarask'] = array(
 );
 
 /** German (Deutsch)
+ * @author Metalhead64
  */
 $messages['de'] = array(
-	'prefs-toctree' => 'Inhaltsverzeichnis',
-	'tog-toc-expand' => 'Vollständiges Inhaltsverzeichnis',
-	'tog-toc-floated' => 'Umflossenes Inhaltsverzeichnis',
 	'toctree-desc' => 'Erweiterung zum Ein- und Ausklappen des Inhaltsverzeichnisses',
+	'prefs-toctree' => 'Inhaltsverzeichnis',
+	'toctree-tog-expand' => 'Inhaltsverzeichnis ausklappen',
+	'toctree-tog-floated' => 'Schwebendes Inhaltsverzeichnis',
 );
 
 /** Spanish (español)
@@ -73,10 +74,10 @@ $messages['gl'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'prefs-toctree' => 'Zapis wobsaha',
-	'tog-toc-expand' => 'Zapis wobsaha rozfałdować',
-	'tog-toc-floated' => 'Wobběhany zapis wobsaha',
 	'toctree-desc' => 'Rozšěrjenje za rozfałdowanje a fałdowanje zapisa wobsaha',
+	'prefs-toctree' => 'Zapis wobsaha',
+	'toctree-tog-expand' => 'Zapis wobsaha pokazać',
+	'toctree-tog-floated' => 'Znošowacy zapis wobsaha',
 );
 
 /** Italian (italiano)
@@ -102,10 +103,8 @@ $messages['ja'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'prefs-toctree' => '목차',
-	'tog-toc-expand' => '목차 펼치기',
-	'tog-toc-floated' => '목차 띄우기',
 	'toctree-desc' => '목차의 펼치기와 접기를 위한 확장 기능',
+	'prefs-toctree' => '목차',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
