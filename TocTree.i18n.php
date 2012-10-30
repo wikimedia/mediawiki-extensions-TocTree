@@ -47,10 +47,10 @@ $messages['de'] = array(
  * @author Armando-Martin
  */
 $messages['es'] = array(
-	'prefs-toctree' => 'Tabla de contenidos',
-	'tog-toc-expand' => 'Expandir la tabla de contenidos',
-	'tog-toc-floated' => 'Tabla de contenidos flotante',
 	'toctree-desc' => 'Extensión para la expansión y contracción de la tabla de contenidos',
+	'prefs-toctree' => 'Tabla de contenidos',
+	'toctree-tog-expand' => 'Expandir la tabla de contenidos',
+	'toctree-tog-floated' => 'Tabla de contenidos flotante',
 );
 
 /** French (français)
@@ -84,19 +84,19 @@ $messages['hsb'] = array(
  * @author Beta16
  */
 $messages['it'] = array(
-	'prefs-toctree' => 'Indice',
-	'tog-toc-expand' => 'Espandi il sommario',
-	'tog-toc-floated' => 'Floated table of contents',
 	'toctree-desc' => "Estensione per l'espansione e la compressione dell'indice dei contenuti",
+	'prefs-toctree' => 'Indice',
+	'toctree-tog-expand' => 'Espandi indice',
+	'toctree-tog-floated' => 'Indice flottante',
 );
 
 /** Japanese (日本語)
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'prefs-toctree' => '目次',
-	'tog-toc-expand' => '目次を展開',
 	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
+	'prefs-toctree' => '目次',
+	'toctree-tog-expand' => '目次を展開',
 );
 
 /** Korean (한국어)
@@ -105,6 +105,8 @@ $messages['ja'] = array(
 $messages['ko'] = array(
 	'toctree-desc' => '목차의 펼치기와 접기를 위한 확장 기능',
 	'prefs-toctree' => '목차',
+	'toctree-tog-expand' => '목차 펼치기',
+	'toctree-tog-floated' => '목차 띄우기',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -118,10 +120,10 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'prefs-toctree' => 'Содржина',
-	'tog-toc-expand' => 'Расклопи содржина',
-	'tog-toc-floated' => 'Содржина со променлива положба',
 	'toctree-desc' => 'Додаток за расклоп и слопување на содржината',
+	'prefs-toctree' => 'Содржина',
+	'toctree-tog-expand' => 'Расклопи содржина',
+	'toctree-tog-floated' => 'Содржина со променлива положба',
 );
 
 /** Dutch (Nederlands)
