@@ -64,10 +64,10 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'prefs-toctree' => 'Táboa de contidos',
-	'tog-toc-expand' => 'Expandir a táboa de contidos',
-	'tog-toc-floated' => 'Táboa de contidos flotante',
 	'toctree-desc' => 'Extensión para a expansión e contracción da táboa de contidos',
+	'prefs-toctree' => 'Táboa de contidos',
+	'toctree-tog-expand' => 'Expandir a táboa de contidos',
+	'toctree-tog-floated' => 'Táboa de contidos flotante',
 );
 
 /** Upper Sorbian (hornjoserbsce)
