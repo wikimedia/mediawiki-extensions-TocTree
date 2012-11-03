@@ -54,10 +54,11 @@ $messages['es'] = array(
 );
 
 /** French (français)
+ * @author Crochet.david
  */
 $messages['fr'] = array(
-	'tog-toc-expand' => 'Etendre le sommaire',
-	'tog-toc-floated' => 'Sommaire flottant',
+	'prefs-toctree' => 'Table des matières',
+	'toctree-tog-expand' => 'Développez la table des matières',
 );
 
 /** Galician (galego)
