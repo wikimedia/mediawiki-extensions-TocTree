@@ -74,6 +74,16 @@ $messages['gl'] = array(
 	'toctree-tog-floated' => 'Táboa de contidos flotante',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'toctree-desc' => 'הרחבה להרחבה וצמצום של של תוכן העניינים',
+	'prefs-toctree' => 'תוכן עניינים',
+	'toctree-tog-expand' => 'הרחבת תוכן עניינים',
+	'toctree-tog-floated' => 'תוכן עניינים צף',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -130,11 +140,24 @@ $messages['mk'] = array(
 	'toctree-tog-floated' => 'Содржина со променлива положба',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'toctree-desc' => 'Sambungan untuk membuka tutup jadual isi kandungan',
+	'prefs-toctree' => 'Jadual isi kandungan',
+	'toctree-tog-expand' => 'Buka jadual isi kandungan',
+	'toctree-tog-floated' => 'Jadual isi kandungan terapung',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
 $messages['nl'] = array(
+	'toctree-desc' => 'Uitbreiding voor het inklappen en uitvouwen van de inhoudsopgave',
 	'prefs-toctree' => 'Inhoudsopgave',
+	'toctree-tog-expand' => 'Inhoudsopgave uitvouwen',
+	'toctree-tog-floated' => 'Drijvende inhoudsopgave',
 );
 
 /** Polish (polski)
