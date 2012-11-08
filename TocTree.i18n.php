@@ -166,3 +166,13 @@ $messages['pl'] = array(
 	'tog-toc-expand' => 'Rozwijanie spisu treści',
 	'tog-toc-floated' => 'Opływanie spisu treści',
 );
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'toctree-desc' => 'Mở đóng mục lục',
+	'prefs-toctree' => 'Mục lục',
+	'toctree-tog-expand' => 'Mở mục lục',
+	'toctree-tog-floated' => 'Thả trôi mục lục',
+);
