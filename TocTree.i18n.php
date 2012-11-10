@@ -167,6 +167,13 @@ $messages['pl'] = array(
 	'tog-toc-floated' => 'Opływanie spisu treści',
 );
 
+/** Tamil (தமிழ்)
+ * @author மதனாஹரன்
+ */
+$messages['ta'] = array(
+	'prefs-toctree' => 'உள்ளடக்க வரிசைப் பட்டியல்',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
