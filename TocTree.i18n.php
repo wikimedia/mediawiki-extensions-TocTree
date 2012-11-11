@@ -17,12 +17,11 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Raymond
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
+	'toctree-desc' => '{{desc|name=Toc Tree|url=http://www.mediawiki.org/wiki/Extension:TocTree}}',
 	'prefs-toctree' => 'Section header in misc. preferences.',
-	'tog-toc-expand' => "[[Special:Preferences]], tab 'Misc'. Offers user a choice to expand the table of content",
-	'tog-toc-floated' => "[[Special:Preferences]], tab 'Misc'. Offers user a choice to show the table of content floated",
-	'toctree-desc' => '{{desc}}',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
