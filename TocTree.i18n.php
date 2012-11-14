@@ -139,6 +139,16 @@ $messages['mk'] = array(
 	'toctree-tog-floated' => 'Содржина со променлива положба',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'toctree-desc' => 'ഉള്ളടക്കപ്പട്ടിക വികസിപ്പിക്കാനും ചുരുക്കാനുമുള്ള അനുബന്ധം',
+	'prefs-toctree' => 'ഉള്ളടക്കപ്പട്ടിക',
+	'toctree-tog-expand' => 'ഉള്ളടക്കപ്പട്ടിക വികസിപ്പിക്കുക',
+	'toctree-tog-floated' => 'ഒഴുകി നിൽക്കുന്ന ഉള്ളടക്കപ്പട്ടിക',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
