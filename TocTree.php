@@ -29,19 +29,11 @@ $wgDefaultUserOptions['toc-floated'] = false;
 $wgDefaultUserOptions['toc-expand'] = false;
 
 // resources
-$commonModuleInfo = array(
+$wgResourceModules['ext.toctree'] = array(
 	'localBasePath' => __DIR__ . '/modules',
 	'remoteExtPath' => 'TocTree/modules',
-);
-$wgResourceModules['ext.toctree'] = $commonModuleInfo + array(
 	'styles' => 'ext.toctree.css',
 	'scripts' => 'ext.toctree.js',
-);
-$wgResourceModules['ext.toctree.collapsed'] = $commonModuleInfo + array(
-	'styles' => 'ext.toctree.collapsed.css',
-);
-$wgResourceModules['ext.toctree.floated'] = $commonModuleInfo + array(
-	'styles' => 'ext.toctree.floated.css',
 );
 
 // credits
