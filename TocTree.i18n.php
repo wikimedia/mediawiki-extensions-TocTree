@@ -28,8 +28,20 @@ $messages['qqq'] = array(
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
+	'toctree-desc' => 'Пашырэньне для згортваньня і разгортваньня зьместу старонкі',
 	'prefs-toctree' => 'Зьмест',
-	'tog-toc-expand' => 'Разгарнуць зьмест',
+	'toctree-tog-expand' => 'Разгарнуць зьмест',
+	'toctree-tog-floated' => 'Плаваючы зьмест',
+);
+
+/** Czech (česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'toctree-desc' => 'Rozšíření pro rozbalování a sbalování tabulky obsahu',
+	'prefs-toctree' => 'Tabulka obsahu',
+	'toctree-tog-expand' => 'Rozbalit obsah',
+	'toctree-tog-floated' => 'Plovoucí obsah',
 );
 
 /** German (Deutsch)
