@@ -34,6 +34,15 @@ $messages['be-tarask'] = array(
 	'toctree-tog-floated' => 'Плаваючы зьмест',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'toctree-desc' => 'Astenn evit displegañ ha krennañ an daolenn.',
+	'prefs-toctree' => 'Taolenn',
+	'toctree-tog-expand' => 'Displegañ an daolenn',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
