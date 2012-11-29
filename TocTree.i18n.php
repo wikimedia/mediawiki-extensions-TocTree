@@ -73,6 +73,14 @@ $messages['es'] = array(
 	'toctree-tog-floated' => 'Tabla de contenidos flotante',
 );
 
+/** Finnish (suomi)
+ * @author Nedergard
+ */
+$messages['fi'] = array(
+	'prefs-toctree' => 'Sisällysluettelo',
+	'toctree-tog-expand' => 'Laajenna sisällysluettelo',
+);
+
 /** French (français)
  * @author Crochet.david
  * @author Gomoko
