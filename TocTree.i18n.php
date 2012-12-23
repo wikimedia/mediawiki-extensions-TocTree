@@ -199,10 +199,19 @@ $messages['nl'] = array(
 );
 
 /** Polish (polski)
+ * @author Matma Rex
  */
 $messages['pl'] = array(
-	'tog-toc-expand' => 'Rozwijanie spisu treści',
-	'tog-toc-floated' => 'Opływanie spisu treści',
+	'prefs-toctree' => 'Spis treści',
+	'toctree-tog-expand' => 'Rozwiń spis treści',
+	'toctree-tog-floated' => 'Spis treści z boku',
+);
+
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'prefs-toctree' => 'Innehållsförteckning',
 );
 
 /** Tamil (தமிழ்)
