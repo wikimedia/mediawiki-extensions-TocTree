@@ -207,6 +207,14 @@ $messages['pl'] = array(
 	'toctree-tog-floated' => 'Spis treści z boku',
 );
 
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'prefs-toctree' => 'Cuprins',
+	'toctree-tog-expand' => 'Extinde cuprinsul',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
