@@ -75,8 +75,10 @@ $messages['es'] = array(
 
 /** Finnish (suomi)
  * @author Nedergard
+ * @author VezonThunder
  */
 $messages['fi'] = array(
+	'toctree-desc' => 'Laajennus sisällysluettelon laajentamiseen ja tiivistämiseen',
 	'prefs-toctree' => 'Sisällysluettelo',
 	'toctree-tog-expand' => 'Laajenna sisällysluettelo',
 );
@@ -213,6 +215,23 @@ $messages['pl'] = array(
 $messages['ro'] = array(
 	'prefs-toctree' => 'Cuprins',
 	'toctree-tog-expand' => 'Extinde cuprinsul',
+);
+
+/** Russian (русский)
+ * @author Ole Yves
+ */
+$messages['ru'] = array(
+	'toctree-desc' => 'Расширение для скрытия и раскрытия содержания',
+	'prefs-toctree' => 'Содержание',
+	'toctree-tog-expand' => 'Раскрыть содержание',
+	'toctree-tog-floated' => 'Плавающее содержание',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'prefs-toctree' => 'පටුන',
 );
 
 /** Swedish (svenska)
