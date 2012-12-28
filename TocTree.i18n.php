@@ -209,6 +209,16 @@ $messages['pl'] = array(
 	'toctree-tog-floated' => 'Spis treści z boku',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'toctree-desc' => "Estension për l'espansion e lë strenziment dla tàula dij contnù",
+	'prefs-toctree' => 'Tàula dij contnù',
+	'toctree-tog-expand' => 'Espand la tàula dij contnù',
+	'toctree-tog-floated' => 'Rendù flotant la tàula dij contnù',
+);
+
 /** Romanian (română)
  * @author Stelistcristi
  */
@@ -246,6 +256,14 @@ $messages['sv'] = array(
  */
 $messages['ta'] = array(
 	'prefs-toctree' => 'உள்ளடக்க வரிசைப் பட்டியல்',
+);
+
+/** Ukrainian (українська)
+ * @author Steve.rusyn
+ */
+$messages['uk'] = array(
+	'prefs-toctree' => 'Зміст',
+	'toctree-tog-expand' => 'Розкрити зміст',
 );
 
 /** Vietnamese (Tiếng Việt)
