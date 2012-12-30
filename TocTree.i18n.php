@@ -242,6 +242,8 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'prefs-toctree' => 'පටුන',
+	'toctree-tog-expand' => 'පටුන විදහන්න',
+	'toctree-tog-floated' => 'ඉපිල්ලුණු පටුන',
 );
 
 /** Swedish (svenska)
