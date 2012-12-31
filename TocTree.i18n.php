@@ -260,6 +260,13 @@ $messages['ta'] = array(
 	'prefs-toctree' => 'உள்ளடக்க வரிசைப் பட்டியல்',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'prefs-toctree' => 'مەزمۇن مۇندەرىجىسى',
+);
+
 /** Ukrainian (українська)
  * @author Steve.rusyn
  */
