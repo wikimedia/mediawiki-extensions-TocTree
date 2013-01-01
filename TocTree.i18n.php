@@ -94,6 +94,13 @@ $messages['fr'] = array(
 	'toctree-tog-floated' => 'Table des matières flottante',
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'prefs-toctree' => 'Trâbla de les matiéres',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
