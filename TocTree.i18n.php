@@ -234,6 +234,16 @@ $messages['ro'] = array(
 	'toctree-tog-expand' => 'Extinde cuprinsul',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'toctree-desc' => "Estenziune pe l'espanzione e 'u collassamende d'a tabbelle de le condenute",
+	'prefs-toctree' => 'Tabbelle de le condenute',
+	'toctree-tog-expand' => "Spanne 'a tabbelle de le condenute",
+	'toctree-tog-floated' => "Galleggie 'a tabbelle de le condenute",
+);
+
 /** Russian (русский)
  * @author Ole Yves
  */
