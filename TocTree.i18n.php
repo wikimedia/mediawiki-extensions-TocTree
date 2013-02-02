@@ -24,6 +24,16 @@ $messages['qqq'] = array(
 	'prefs-toctree' => 'Section header in misc. preferences.',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'toctree-desc' => 'Estensión para espander y contraer la tabla de conteníu',
+	'prefs-toctree' => 'Tabla de conteníu',
+	'toctree-tog-expand' => 'Espander la tabla de conteníu',
+	'toctree-tog-floated' => 'Tabla de conteníu flotante',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
