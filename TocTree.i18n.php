@@ -227,13 +227,14 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'toctree-desc' => "Estension për l'espansion e lë strenziment dla tàula dij contnù",
 	'prefs-toctree' => 'Tàula dij contnù',
 	'toctree-tog-expand' => 'Espand la tàula dij contnù',
-	'toctree-tog-floated' => 'Rendù flotant la tàula dij contnù',
+	'toctree-tog-floated' => 'Tàula dij contnù flotanta',
 );
 
 /** Romanian (română)
