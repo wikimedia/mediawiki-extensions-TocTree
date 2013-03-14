@@ -312,3 +312,13 @@ $messages['vi'] = array(
 	'toctree-tog-expand' => 'Mở mục lục',
 	'toctree-tog-floated' => 'Thả trôi mục lục',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'toctree-desc' => '对内容表的展开与折叠的扩展',
+	'prefs-toctree' => '内容表',
+	'toctree-tog-expand' => '展开的内容表',
+	'toctree-tog-floated' => '折叠的内容表',
+);
