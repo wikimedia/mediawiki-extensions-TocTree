@@ -22,6 +22,14 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'toctree-desc' => '{{desc|name=Toc Tree|url=http://www.mediawiki.org/wiki/Extension:TocTree}}',
 	'prefs-toctree' => 'Section header in misc. preferences.',
+	'toctree-tog-expand' => 'Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].
+
+See also:
+* {{msg-mw|Toctree-tog-floated}}',
+	'toctree-tog-floated' => 'Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].
+
+See also:
+* {{msg-mw|Toctree-tog-expand}}',
 );
 
 /** Asturian (asturianu)
