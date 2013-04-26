@@ -11,7 +11,7 @@ $messages = array();
 $messages['en'] = array(
 	'toctree-desc' => 'Extension for the expansion and collapsing of the table of contents',
 	'prefs-toctree' => 'Table of contents',
-	'toctree-tog-expand' => 'Expand table of contents',
+	'toctree-tog-expand' => 'Enable expandable table of contents',
 	'toctree-tog-floated' => 'Floated table of contents',
 );
 
