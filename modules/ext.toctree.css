@@ -1,5 +1,5 @@
 /*
- * Style sheets for the TocTree extension 
+ * Style sheets for the TocTree extension
  * to display the toc structure
  *
  * @package MediaWiki
@@ -14,19 +14,10 @@
 	padding-left: 2em;
 }
 
-body.rtl #toc .tocUl {
-	padding-right: 2em;
-}
-
 #toc.tocFloat {
 	float: left;
 	margin: 0 2em 1em 0;
 	width: 20em;
-}
-
-body.rtl #toc.tocFloat {
-	float: right;
-	margin: 0 0 1em 2em;
 }
 
 .toggleSymbol {
@@ -40,11 +31,7 @@ body.rtl #toc.tocFloat {
 	left: -2em;
 }
 
-body.rtl .toggleNode {
-	right: 2em;
-}
-
-.noFloat #toc.tocFloat, body.rtl .noFloat #toc.tocFloat {
+.noFloat #toc.tocFloat {
 	float: none;
 	margin: 0;
 	width: auto;
@@ -57,13 +44,7 @@ body.rtl .toggleNode {
 	max-width: 20em;
 }
 
-body.rtl #toc.tocFloat {
-	float: right;
-	margin: 0 0 1em 2em;
-	max-width: 20em;
-}
-
-.noFloat #toc.tocFloat, body.rtl .noFloat.tocFloat #toc {
+.noFloat #toc.tocFloat {
 	float: none;
 	margin: 0;
 	max-width: auto;
