@@ -133,9 +133,9 @@ $messages['gl'] = array(
  * @author Amire80
  */
 $messages['he'] = array(
-	'toctree-desc' => 'הרחבה להרחבה וצמצום של של תוכן העניינים',
+	'toctree-desc' => 'הרחבה לפתיחה וצמצום של של תוכן העניינים',
 	'prefs-toctree' => 'תוכן עניינים',
-	'toctree-tog-expand' => 'הרחבת תוכן עניינים',
+	'toctree-tog-expand' => 'הפעלת תוכן עניינים מתרחב',
 	'toctree-tog-floated' => 'תוכן עניינים צף',
 );
 
