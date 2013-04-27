@@ -304,11 +304,14 @@ $messages['ug-arab'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Steve.rusyn
  */
 $messages['uk'] = array(
+	'toctree-desc' => 'Розширення для згорнення і розгорнення змісту',
 	'prefs-toctree' => 'Зміст',
 	'toctree-tog-expand' => 'Розкрити зміст',
+	'toctree-tog-floated' => 'Плаваючий зміст',
 );
 
 /** Vietnamese (Tiếng Việt)
