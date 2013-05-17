@@ -77,7 +77,7 @@ $messages['cs'] = array(
 $messages['de'] = array(
 	'toctree-desc' => 'Erweiterung zum Ein- und Ausklappen des Inhaltsverzeichnisses',
 	'prefs-toctree' => 'Inhaltsverzeichnis',
-	'toctree-tog-expand' => 'Inhaltsverzeichnis ausklappen',
+	'toctree-tog-expand' => 'Ausklappbares Inhaltsverzeichnis aktivieren',
 	'toctree-tog-floated' => 'Schwebendes Inhaltsverzeichnis',
 );
 
