@@ -22,10 +22,12 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'toctree-desc' => '{{desc|name=Toc Tree|url=http://www.mediawiki.org/wiki/Extension:TocTree}}',
 	'prefs-toctree' => 'Section header in misc. preferences.',
-	'toctree-tog-expand' => 'Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].
+	'toctree-tog-expand' => "Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].
+
+This feature enables not only to '''expand''' but also to '''collapse''' (with [+]/[-] buttons).
 
 See also:
-* {{msg-mw|Toctree-tog-floated}}',
+* {{msg-mw|Toctree-tog-floated}}",
 	'toctree-tog-floated' => 'Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].
 
 See also:
@@ -125,7 +127,7 @@ $messages['frp'] = array(
 $messages['gl'] = array(
 	'toctree-desc' => 'Extensión para a expansión e contracción da táboa de contidos',
 	'prefs-toctree' => 'Táboa de contidos',
-	'toctree-tog-expand' => 'Expandir a táboa de contidos',
+	'toctree-tog-expand' => 'Activar a táboa de contidos expansible',
 	'toctree-tog-floated' => 'Táboa de contidos flotante',
 );
 
@@ -165,7 +167,7 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
 	'prefs-toctree' => '目次',
-	'toctree-tog-expand' => '目次を展開',
+	'toctree-tog-expand' => '展開/折り畳みできる目次を有効にする',
 );
 
 /** Korean (한국어)
@@ -191,7 +193,7 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'toctree-desc' => 'Додаток за расклоп и слопување на содржината',
 	'prefs-toctree' => 'Содржина',
-	'toctree-tog-expand' => 'Расклопи содржина',
+	'toctree-tog-expand' => 'Вклучи расклопна содржина',
 	'toctree-tog-floated' => 'Содржина со променлива положба',
 );
 
@@ -221,7 +223,7 @@ $messages['ms'] = array(
 $messages['nl'] = array(
 	'toctree-desc' => 'Uitbreiding voor het inklappen en uitvouwen van de inhoudsopgave',
 	'prefs-toctree' => 'Inhoudsopgave',
-	'toctree-tog-expand' => 'Inhoudsopgave uitvouwen',
+	'toctree-tog-expand' => 'Inhoudsopgave uitvouwen inschakelen',
 	'toctree-tog-floated' => 'Drijvende inhoudsopgave',
 );
 
