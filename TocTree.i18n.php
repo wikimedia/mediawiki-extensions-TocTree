@@ -213,7 +213,7 @@ $messages['ml'] = array(
 $messages['ms'] = array(
 	'toctree-desc' => 'Sambungan untuk membuka tutup jadual isi kandungan',
 	'prefs-toctree' => 'Jadual isi kandungan',
-	'toctree-tog-expand' => 'Buka jadual isi kandungan',
+	'toctree-tog-expand' => 'Hidupkan jadual isi kandungan kembang kuncup',
 	'toctree-tog-floated' => 'Jadual isi kandungan terapung',
 );
 
