@@ -104,13 +104,14 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Automatik
  * @author Crochet.david
  * @author Gomoko
  */
 $messages['fr'] = array(
 	'toctree-desc' => "Extension pour l'expansion et la réduction de la table des matières",
 	'prefs-toctree' => 'Table des matières',
-	'toctree-tog-expand' => 'Développez la table des matières',
+	'toctree-tog-expand' => "Permettre à la table des matières d'être extensible.",
 	'toctree-tog-floated' => 'Table des matières flottante',
 );
 
