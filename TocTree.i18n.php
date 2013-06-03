@@ -40,7 +40,7 @@ See also:
 $messages['ast'] = array(
 	'toctree-desc' => 'Estensión para espander y contraer la tabla de conteníu',
 	'prefs-toctree' => 'Tabla de conteníu',
-	'toctree-tog-expand' => 'Espander la tabla de conteníu',
+	'toctree-tog-expand' => 'Espander la tabla de conteníu', # Fuzzy
 	'toctree-tog-floated' => 'Tabla de conteníu flotante',
 );
 
@@ -50,7 +50,7 @@ $messages['ast'] = array(
 $messages['be-tarask'] = array(
 	'toctree-desc' => 'Пашырэньне для згортваньня і разгортваньня зьместу старонкі',
 	'prefs-toctree' => 'Зьмест',
-	'toctree-tog-expand' => 'Разгарнуць зьмест',
+	'toctree-tog-expand' => 'Разгарнуць зьмест', # Fuzzy
 	'toctree-tog-floated' => 'Плаваючы зьмест',
 );
 
@@ -60,7 +60,7 @@ $messages['be-tarask'] = array(
 $messages['br'] = array(
 	'toctree-desc' => 'Astenn evit displegañ ha krennañ an daolenn.',
 	'prefs-toctree' => 'Taolenn',
-	'toctree-tog-expand' => 'Displegañ an daolenn',
+	'toctree-tog-expand' => 'Displegañ an daolenn', # Fuzzy
 );
 
 /** Czech (česky)
@@ -69,7 +69,7 @@ $messages['br'] = array(
 $messages['cs'] = array(
 	'toctree-desc' => 'Rozšíření pro rozbalování a sbalování tabulky obsahu',
 	'prefs-toctree' => 'Tabulka obsahu',
-	'toctree-tog-expand' => 'Rozbalit obsah',
+	'toctree-tog-expand' => 'Rozbalit obsah', # Fuzzy
 	'toctree-tog-floated' => 'Plovoucí obsah',
 );
 
@@ -89,7 +89,7 @@ $messages['de'] = array(
 $messages['es'] = array(
 	'toctree-desc' => 'Extensión para la expansión y contracción de la tabla de contenidos',
 	'prefs-toctree' => 'Tabla de contenidos',
-	'toctree-tog-expand' => 'Expandir la tabla de contenidos',
+	'toctree-tog-expand' => 'Expandir la tabla de contenidos', # Fuzzy
 	'toctree-tog-floated' => 'Tabla de contenidos flotante',
 );
 
@@ -100,7 +100,7 @@ $messages['es'] = array(
 $messages['fi'] = array(
 	'toctree-desc' => 'Laajennus sisällysluettelon laajentamiseen ja tiivistämiseen',
 	'prefs-toctree' => 'Sisällysluettelo',
-	'toctree-tog-expand' => 'Laajenna sisällysluettelo',
+	'toctree-tog-expand' => 'Laajenna sisällysluettelo', # Fuzzy
 );
 
 /** French (français)
@@ -148,7 +148,7 @@ $messages['he'] = array(
 $messages['hsb'] = array(
 	'toctree-desc' => 'Rozšěrjenje za rozfałdowanje a fałdowanje zapisa wobsaha',
 	'prefs-toctree' => 'Zapis wobsaha',
-	'toctree-tog-expand' => 'Zapis wobsaha pokazać',
+	'toctree-tog-expand' => 'Zapis wobsaha pokazać', # Fuzzy
 	'toctree-tog-floated' => 'Znošowacy zapis wobsaha',
 );
 
@@ -158,7 +158,7 @@ $messages['hsb'] = array(
 $messages['it'] = array(
 	'toctree-desc' => "Estensione per l'espansione e la compressione dell'indice dei contenuti",
 	'prefs-toctree' => 'Indice',
-	'toctree-tog-expand' => 'Espandi indice',
+	'toctree-tog-expand' => 'Espandi indice', # Fuzzy
 	'toctree-tog-floated' => 'Indice flottante',
 );
 
@@ -177,7 +177,7 @@ $messages['ja'] = array(
 $messages['ko'] = array(
 	'toctree-desc' => '목차의 펼치기와 접기를 위한 확장 기능',
 	'prefs-toctree' => '목차',
-	'toctree-tog-expand' => '목차 펼치기',
+	'toctree-tog-expand' => '목차 펼치기', # Fuzzy
 	'toctree-tog-floated' => '목차 띄우기',
 );
 
@@ -204,7 +204,7 @@ $messages['mk'] = array(
 $messages['ml'] = array(
 	'toctree-desc' => 'ഉള്ളടക്കപ്പട്ടിക വികസിപ്പിക്കാനും ചുരുക്കാനുമുള്ള അനുബന്ധം',
 	'prefs-toctree' => 'ഉള്ളടക്കപ്പട്ടിക',
-	'toctree-tog-expand' => 'ഉള്ളടക്കപ്പട്ടിക വികസിപ്പിക്കുക',
+	'toctree-tog-expand' => 'ഉള്ളടക്കപ്പട്ടിക വികസിപ്പിക്കുക', # Fuzzy
 	'toctree-tog-floated' => 'ഒഴുകി നിൽക്കുന്ന ഉള്ളടക്കപ്പട്ടിക',
 );
 
@@ -233,7 +233,7 @@ $messages['nl'] = array(
  */
 $messages['pl'] = array(
 	'prefs-toctree' => 'Spis treści',
-	'toctree-tog-expand' => 'Rozwiń spis treści',
+	'toctree-tog-expand' => 'Rozwiń spis treści', # Fuzzy
 	'toctree-tog-floated' => 'Spis treści z boku',
 );
 
@@ -244,7 +244,7 @@ $messages['pl'] = array(
 $messages['pms'] = array(
 	'toctree-desc' => "Estension për l'espansion e lë strenziment dla tàula dij contnù",
 	'prefs-toctree' => 'Tàula dij contnù',
-	'toctree-tog-expand' => 'Espand la tàula dij contnù',
+	'toctree-tog-expand' => 'Espand la tàula dij contnù', # Fuzzy
 	'toctree-tog-floated' => 'Tàula dij contnù flotanta',
 );
 
@@ -253,7 +253,7 @@ $messages['pms'] = array(
  */
 $messages['ro'] = array(
 	'prefs-toctree' => 'Cuprins',
-	'toctree-tog-expand' => 'Extinde cuprinsul',
+	'toctree-tog-expand' => 'Extinde cuprinsul', # Fuzzy
 );
 
 /** tarandíne (tarandíne)
@@ -262,7 +262,7 @@ $messages['ro'] = array(
 $messages['roa-tara'] = array(
 	'toctree-desc' => "Estenziune pe l'espanzione e 'u collassamende d'a tabbelle de le condenute",
 	'prefs-toctree' => 'Tabbelle de le condenute',
-	'toctree-tog-expand' => "Spanne 'a tabbelle de le condenute",
+	'toctree-tog-expand' => "Spanne 'a tabbelle de le condenute", # Fuzzy
 	'toctree-tog-floated' => "Galleggie 'a tabbelle de le condenute",
 );
 
@@ -272,7 +272,7 @@ $messages['roa-tara'] = array(
 $messages['ru'] = array(
 	'toctree-desc' => 'Расширение для скрытия и раскрытия содержания',
 	'prefs-toctree' => 'Содержание',
-	'toctree-tog-expand' => 'Раскрыть содержание',
+	'toctree-tog-expand' => 'Раскрыть содержание', # Fuzzy
 	'toctree-tog-floated' => 'Плавающее содержание',
 );
 
@@ -281,7 +281,7 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'prefs-toctree' => 'පටුන',
-	'toctree-tog-expand' => 'පටුන විදහන්න',
+	'toctree-tog-expand' => 'පටුන විදහන්න', # Fuzzy
 	'toctree-tog-floated' => 'ඉපිල්ලුණු පටුන',
 );
 
@@ -313,7 +313,7 @@ $messages['ug-arab'] = array(
 $messages['uk'] = array(
 	'toctree-desc' => 'Розширення для згорнення і розгорнення змісту',
 	'prefs-toctree' => 'Зміст',
-	'toctree-tog-expand' => 'Розкрити зміст',
+	'toctree-tog-expand' => 'Розкрити зміст', # Fuzzy
 	'toctree-tog-floated' => 'Плаваючий зміст',
 );
 
@@ -323,7 +323,7 @@ $messages['uk'] = array(
 $messages['vi'] = array(
 	'toctree-desc' => 'Mở đóng mục lục',
 	'prefs-toctree' => 'Mục lục',
-	'toctree-tog-expand' => 'Mở mục lục',
+	'toctree-tog-expand' => 'Mở mục lục', # Fuzzy
 	'toctree-tog-floated' => 'Thả trôi mục lục',
 );
 
@@ -333,6 +333,6 @@ $messages['vi'] = array(
 $messages['zh-hans'] = array(
 	'toctree-desc' => '对内容表的展开与折叠的扩展',
 	'prefs-toctree' => '内容表',
-	'toctree-tog-expand' => '展开的内容表',
+	'toctree-tog-expand' => '展开的内容表', # Fuzzy
 	'toctree-tog-floated' => '折叠的内容表',
 );
