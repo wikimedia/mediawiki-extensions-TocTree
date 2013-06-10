@@ -122,6 +122,16 @@ $messages['frp'] = array(
 	'prefs-toctree' => 'Trâbla de les matiéres',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'toctree-desc' => 'Ütjwidjet mögelkhaid, am det auersicht tu wisin of fersteegen.',
+	'prefs-toctree' => 'Auersicht',
+	'toctree-tog-expand' => 'Ütjwidjet auersicht aktiwiare',
+	'toctree-tog-floated' => 'Ütjwidjet auersicht',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
