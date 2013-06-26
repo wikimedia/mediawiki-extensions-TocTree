@@ -179,6 +179,7 @@ $messages['ja'] = array(
 	'toctree-desc' => '目次を展開/折り畳みするための拡張機能',
 	'prefs-toctree' => '目次',
 	'toctree-tog-expand' => '展開/折り畳みできる目次を有効にする',
+	'toctree-tog-floated' => '浮動型の目次',
 );
 
 /** Korean (한국어)
