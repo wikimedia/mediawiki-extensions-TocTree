@@ -300,7 +300,10 @@ $messages['si'] = array(
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
+	'toctree-desc' => 'Tillägg för expandering och ihopfällning av innehållsförteckningen',
 	'prefs-toctree' => 'Innehållsförteckning',
+	'toctree-tog-expand' => 'Aktivera expanderbar innehållsförteckning',
+	'toctree-tog-floated' => 'Flytande innehållsförteckning',
 );
 
 /** Tamil (தமிழ்)
