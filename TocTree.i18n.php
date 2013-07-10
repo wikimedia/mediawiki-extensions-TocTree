@@ -192,6 +192,14 @@ $messages['ko'] = array(
 	'toctree-tog-floated' => '목차 띄우기',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Викиней
+ */
+$messages['ky'] = array(
+	'toctree-desc' => 'Мазмунду жашыруу жана жаюу үчүн кеңейтүү',
+	'prefs-toctree' => 'Мазмуну',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
