@@ -188,7 +188,7 @@ $messages['ja'] = array(
 $messages['ko'] = array(
 	'toctree-desc' => '목차의 펼치기와 접기를 위한 확장 기능',
 	'prefs-toctree' => '목차',
-	'toctree-tog-expand' => '목차 펼치기', # Fuzzy
+	'toctree-tog-expand' => '펼칠 수 있는 목차 활성화',
 	'toctree-tog-floated' => '목차 띄우기',
 );
 
