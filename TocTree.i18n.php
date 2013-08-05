@@ -350,11 +350,12 @@ $messages['vi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Qiyue2001
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'toctree-desc' => '对内容表的展开与折叠的扩展',
 	'prefs-toctree' => '内容表',
-	'toctree-tog-expand' => '展开的内容表', # Fuzzy
+	'toctree-tog-expand' => '启用可展开的内容表',
 	'toctree-tog-floated' => '折叠的内容表',
 );
