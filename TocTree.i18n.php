@@ -281,7 +281,7 @@ $messages['ro'] = array(
 $messages['roa-tara'] = array(
 	'toctree-desc' => "Estenziune pe l'espanzione e 'u collassamende d'a tabbelle de le condenute",
 	'prefs-toctree' => 'Tabbelle de le condenute',
-	'toctree-tog-expand' => "Spanne 'a tabbelle de le condenute", # Fuzzy
+	'toctree-tog-expand' => "Abbilite 'a spanzione d'a tabbelle de le condenute",
 	'toctree-tog-floated' => "Galleggie 'a tabbelle de le condenute",
 );
 
@@ -329,13 +329,15 @@ $messages['ug-arab'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Base
  * @author Steve.rusyn
+ * @author SteveR
  */
 $messages['uk'] = array(
 	'toctree-desc' => 'Розширення для згорнення і розгорнення змісту',
 	'prefs-toctree' => 'Зміст',
-	'toctree-tog-expand' => 'Розкрити зміст', # Fuzzy
+	'toctree-tog-expand' => 'Увімкнути розширення таблиці змісту',
 	'toctree-tog-floated' => 'Плаваючий зміст',
 );
 
