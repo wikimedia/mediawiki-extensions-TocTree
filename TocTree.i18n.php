@@ -168,7 +168,7 @@ $messages['hsb'] = array(
 $messages['it'] = array(
 	'toctree-desc' => "Estensione per l'espansione e la compressione dell'indice dei contenuti",
 	'prefs-toctree' => 'Indice',
-	'toctree-tog-expand' => 'Espandi indice', # Fuzzy
+	'toctree-tog-expand' => 'Abilita indice espandibile',
 	'toctree-tog-floated' => 'Indice flottante',
 );
 
