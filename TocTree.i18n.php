@@ -249,10 +249,11 @@ $messages['nl'] = array(
 
 /** Polish (polski)
  * @author Matma Rex
+ * @author WTM
  */
 $messages['pl'] = array(
 	'prefs-toctree' => 'Spis treści',
-	'toctree-tog-expand' => 'Rozwiń spis treści', # Fuzzy
+	'toctree-tog-expand' => 'Włącz rozwijalny spis treści',
 	'toctree-tog-floated' => 'Spis treści z boku',
 );
 
