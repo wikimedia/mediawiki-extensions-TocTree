@@ -40,7 +40,7 @@ See also:
 $messages['ast'] = array(
 	'toctree-desc' => 'Estensión para espander y contraer la tabla de conteníu',
 	'prefs-toctree' => 'Tabla de conteníu',
-	'toctree-tog-expand' => 'Espander la tabla de conteníu', # Fuzzy
+	'toctree-tog-expand' => 'Activar la tabla de conteníu espansible',
 	'toctree-tog-floated' => 'Tabla de conteníu flotante',
 );
 
@@ -348,7 +348,7 @@ $messages['uk'] = array(
 $messages['vi'] = array(
 	'toctree-desc' => 'Mở đóng mục lục',
 	'prefs-toctree' => 'Mục lục',
-	'toctree-tog-expand' => 'Mở mục lục', # Fuzzy
+	'toctree-tog-expand' => 'Sử dụng mục lục mở đóng',
 	'toctree-tog-floated' => 'Thả trôi mục lục',
 );
 
