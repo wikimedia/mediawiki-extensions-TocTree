@@ -85,11 +85,12 @@ $messages['de'] = array(
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Fitoschido
  */
 $messages['es'] = array(
 	'toctree-desc' => 'Extensión para la expansión y contracción de la tabla de contenidos',
 	'prefs-toctree' => 'Tabla de contenidos',
-	'toctree-tog-expand' => 'Expandir la tabla de contenidos', # Fuzzy
+	'toctree-tog-expand' => 'Activar la tabla de contenidos expandible',
 	'toctree-tog-floated' => 'Tabla de contenidos flotante',
 );
 
