@@ -73,6 +73,16 @@ $messages['cs'] = array(
 	'toctree-tog-floated' => 'Plovoucí obsah',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'toctree-desc' => "Estyniad sy'n chwyddo a chrebachu'r mynegai i gynnwys tudalen",
+	'prefs-toctree' => 'Mynegai i gynnwys tudalen',
+	'toctree-tog-expand' => "Galluogi cuddio a datguddio'r mynegai i gynnwys tudalen",
+	'toctree-tog-floated' => "Mynegai i gynnwys tudalen sy'n arnofio",
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
