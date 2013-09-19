@@ -298,12 +298,13 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (русский)
+ * @author Okras
  * @author Ole Yves
  */
 $messages['ru'] = array(
 	'toctree-desc' => 'Расширение для скрытия и раскрытия содержания',
 	'prefs-toctree' => 'Содержание',
-	'toctree-tog-expand' => 'Раскрыть содержание', # Fuzzy
+	'toctree-tog-expand' => 'Включить раскрытие содержания',
 	'toctree-tog-floated' => 'Плавающее содержание',
 );
 
