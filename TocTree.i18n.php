@@ -203,7 +203,7 @@ $messages['ko'] = array(
 	'toctree-tog-floated' => '목차 띄우기',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Викиней
  */
 $messages['ky'] = array(
