@@ -104,6 +104,13 @@ $messages['es'] = array(
 	'toctree-tog-floated' => 'Tabla de contenidos flotante',
 );
 
+/** Estonian (eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'prefs-toctree' => 'Sisukord',
+);
+
 /** Finnish (suomi)
  * @author Nedergard
  * @author VezonThunder
