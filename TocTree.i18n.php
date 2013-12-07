@@ -64,7 +64,7 @@ $messages['br'] = array(
 	'toctree-tog-expand' => 'Displegañ an daolenn', # Fuzzy
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  */
 $messages['cs'] = array(
