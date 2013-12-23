@@ -177,7 +177,7 @@ $messages['he'] = array(
 $messages['hsb'] = array(
 	'toctree-desc' => 'Rozšěrjenje za rozfałdowanje a fałdowanje zapisa wobsaha',
 	'prefs-toctree' => 'Zapis wobsaha',
-	'toctree-tog-expand' => 'Zapis wobsaha pokazać', # Fuzzy
+	'toctree-tog-expand' => 'Rozfałdujomny zapis wobsaha zmóžnić',
 	'toctree-tog-floated' => 'Znošowacy zapis wobsaha',
 );
 
