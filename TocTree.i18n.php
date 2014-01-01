@@ -70,7 +70,7 @@ $messages['br'] = array(
 $messages['cs'] = array(
 	'toctree-desc' => 'Rozšíření pro rozbalování a sbalování tabulky obsahu',
 	'prefs-toctree' => 'Tabulka obsahu',
-	'toctree-tog-expand' => 'Rozbalit obsah', # Fuzzy
+	'toctree-tog-expand' => 'Zapnout sbalování tabulky obsahu',
 	'toctree-tog-floated' => 'Plovoucí obsah',
 );
 
