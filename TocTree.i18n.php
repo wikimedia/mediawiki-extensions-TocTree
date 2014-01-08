@@ -84,6 +84,16 @@ $messages['cy'] = array(
 	'toctree-tog-floated' => "Mynegai i gynnwys tudalen sy'n arnofio",
 );
 
+/** Danish (dansk)
+ * @author Christian List
+ */
+$messages['da'] = array(
+	'toctree-desc' => 'Udvidelse til udvidelse og skjulning af indholdsfortegnelsen',
+	'prefs-toctree' => 'Indholdsfortegnelse',
+	'toctree-tog-expand' => 'Aktivér indholdsfortegnelse der kan udvides',
+	'toctree-tog-floated' => 'Flydende indholdsfortegnelse',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
