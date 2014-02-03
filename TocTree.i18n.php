@@ -122,6 +122,15 @@ $messages['et'] = array(
 	'prefs-toctree' => 'Sisukord',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'prefs-toctree' => 'جدول محتویات',
+	'toctree-tog-expand' => 'فعال کردن جدول محتویات قابل انبساط',
+	'toctree-tog-floated' => 'معلق بودن جدول محتویات',
+);
+
 /** Finnish (suomi)
  * @author Nedergard
  * @author VezonThunder
