@@ -126,6 +126,7 @@ $messages['et'] = array(
  * @author Armin1392
  */
 $messages['fa'] = array(
+	'toctree-desc' => 'گستره برای گسترش و خراب کردن محتوای جدول',
 	'prefs-toctree' => 'جدول محتویات',
 	'toctree-tog-expand' => 'فعال کردن جدول محتویات قابل انبساط',
 	'toctree-tog-floated' => 'معلق بودن جدول محتویات',
