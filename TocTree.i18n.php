@@ -201,6 +201,16 @@ $messages['hsb'] = array(
 	'toctree-tog-floated' => 'Znošowacy zapis wobsaha',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'toctree-desc' => 'Pagpaatiddog para iti panagpalawa ken panagrebba ti tabla dagiti linaon',
+	'prefs-toctree' => 'Tabla dagiti linaon',
+	'toctree-tog-expand' => 'Pakabaelan ti mapalawa a tabla dagiti linaon',
+	'toctree-tog-floated' => 'Naipatumpaw a tabla dagiti linaon',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
