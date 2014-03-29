@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "toctree-desc": "Extensión para a expansión e contracción da táboa de contidos",
+    "prefs-toctree": "Táboa de contidos",
+    "toctree-tog-expand": "Activar a táboa de contidos expansible",
+    "toctree-tog-floated": "Táboa de contidos flotante"
+}

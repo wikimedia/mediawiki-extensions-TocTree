@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Xuacu"
+        ]
+    },
+    "toctree-desc": "Estensión para espander y contraer la tabla de conteníu",
+    "prefs-toctree": "Tabla de conteníu",
+    "toctree-tog-expand": "Activar la tabla de conteníu espansible",
+    "toctree-tog-floated": "Tabla de conteníu flotante"
+}

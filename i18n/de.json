@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Metalhead64"
+        ]
+    },
+    "toctree-desc": "Erweiterung zum Ein- und Ausklappen des Inhaltsverzeichnisses",
+    "prefs-toctree": "Inhaltsverzeichnis",
+    "toctree-tog-expand": "Ausklappbares Inhaltsverzeichnis aktivieren",
+    "toctree-tog-floated": "Schwebendes Inhaltsverzeichnis"
+}

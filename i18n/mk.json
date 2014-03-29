@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bjankuloski06"
+        ]
+    },
+    "toctree-desc": "Додаток за расклоп и слопување на содржината",
+    "prefs-toctree": "Содржина",
+    "toctree-tog-expand": "Вклучи расклопна содржина",
+    "toctree-tog-floated": "Содржина со променлива положба"
+}

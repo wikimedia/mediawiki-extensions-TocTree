@@ -15,6 +15,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // extension i18n
+$wgMessagesDirs['TocTree'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TocTree'] = __DIR__ . '/TocTree.i18n.php';
 
 // autoloader
@@ -43,5 +44,5 @@ $wgExtensionCredits['parserhook']['TocTree'] = array(
 	'url' => '//www.mediawiki.org/wiki/Extension:TocTree',
 	'descriptionmsg' => 'toctree-desc',
 	'author' => array( 'Roland Unger', 'Matthias Mullie' ),
-	'version' => '1.11'
+	'version' => '1.12.0'
 );

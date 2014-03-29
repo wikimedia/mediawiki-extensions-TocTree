@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Wizardist"
+        ]
+    },
+    "toctree-desc": "Пашырэньне для згортваньня і разгортваньня зьместу старонкі",
+    "prefs-toctree": "Зьмест",
+    "toctree-tog-expand": "Разгарнуць зьмест",
+    "toctree-tog-floated": "Плаваючы зьмест"
+}

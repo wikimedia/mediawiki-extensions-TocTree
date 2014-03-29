@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Beta16"
+        ]
+    },
+    "toctree-desc": "Estensione per l'espansione e la compressione dell'indice dei contenuti",
+    "prefs-toctree": "Indice",
+    "toctree-tog-expand": "Abilita indice espandibile",
+    "toctree-tog-floated": "Indice flottante"
+}

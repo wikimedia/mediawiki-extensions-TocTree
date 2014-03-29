@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Andriykopanytsia",
+            "Base",
+            "Steve.rusyn",
+            "SteveR"
+        ]
+    },
+    "toctree-desc": "Розширення для згорнення і розгорнення змісту",
+    "prefs-toctree": "Зміст",
+    "toctree-tog-expand": "Увімкнути розширення таблиці змісту",
+    "toctree-tog-floated": "Плаваючий зміст"
+}

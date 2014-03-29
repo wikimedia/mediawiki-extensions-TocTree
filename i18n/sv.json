@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "WikiPhoenix"
+        ]
+    },
+    "toctree-desc": "Tillägg för expandering och ihopfällning av innehållsförteckningen",
+    "prefs-toctree": "Innehållsförteckning",
+    "toctree-tog-expand": "Aktivera expanderbar innehållsförteckning",
+    "toctree-tog-floated": "Flytande innehållsförteckning"
+}
