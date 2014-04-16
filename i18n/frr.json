@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Murma174"
-        ]
-    },
-    "toctree-desc": "Ütjwidjet mögelkhaid, am det auersicht tu wisin of fersteegen.",
-    "prefs-toctree": "Auersicht",
-    "toctree-tog-expand": "Ütjwidjet auersicht aktiwiare",
-    "toctree-tog-floated": "Ütjwidjet auersicht"
+	"@metadata": {
+		"authors": [
+			"Murma174"
+		]
+	},
+	"toctree-desc": "Ütjwidjet mögelkhaid, am det auersicht tu wisin of fersteegen.",
+	"prefs-toctree": "Auersicht",
+	"toctree-tog-expand": "Ütjwidjet auersicht aktiwiare",
+	"toctree-tog-floated": "Ütjwidjet auersicht"
 }

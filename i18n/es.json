@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Armando-Martin",
-            "Fitoschido"
-        ]
-    },
-    "toctree-desc": "Extensión para la expansión y contracción de la tabla de contenidos",
-    "prefs-toctree": "Tabla de contenidos",
-    "toctree-tog-expand": "Activar la tabla de contenidos expandible",
-    "toctree-tog-floated": "Tabla de contenidos flotante"
+	"@metadata": {
+		"authors": [
+			"Armando-Martin",
+			"Fitoschido"
+		]
+	},
+	"toctree-desc": "Extensión para la expansión y contracción de la tabla de contenidos",
+	"prefs-toctree": "Tabla de contenidos",
+	"toctree-tog-expand": "Activar la tabla de contenidos expandible",
+	"toctree-tog-floated": "Tabla de contenidos flotante"
 }

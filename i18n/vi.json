@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Minh Nguyen"
-        ]
-    },
-    "toctree-desc": "Mở đóng mục lục",
-    "prefs-toctree": "Mục lục",
-    "toctree-tog-expand": "Sử dụng mục lục mở đóng",
-    "toctree-tog-floated": "Thả trôi mục lục"
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"toctree-desc": "Mở đóng mục lục",
+	"prefs-toctree": "Mục lục",
+	"toctree-tog-expand": "Sử dụng mục lục mở đóng",
+	"toctree-tog-floated": "Thả trôi mục lục"
 }

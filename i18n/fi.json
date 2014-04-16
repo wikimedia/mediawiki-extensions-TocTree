@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nedergard",
-            "VezonThunder"
-        ]
-    },
-    "toctree-desc": "Laajennus sisällysluettelon laajentamiseen ja tiivistämiseen",
-    "prefs-toctree": "Sisällysluettelo",
-    "toctree-tog-expand": "Laajenna sisällysluettelo"
+	"@metadata": {
+		"authors": [
+			"Nedergard",
+			"VezonThunder"
+		]
+	},
+	"toctree-desc": "Laajennus sisällysluettelon laajentamiseen ja tiivistämiseen",
+	"prefs-toctree": "Sisällysluettelo",
+	"toctree-tog-expand": "Laajenna sisällysluettelo"
 }

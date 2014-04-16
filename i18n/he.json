@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80"
-        ]
-    },
-    "toctree-desc": "הרחבה לפתיחה וצמצום של של תוכן העניינים",
-    "prefs-toctree": "תוכן עניינים",
-    "toctree-tog-expand": "הפעלת תוכן עניינים מתרחב",
-    "toctree-tog-floated": "תוכן עניינים צף"
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"toctree-desc": "הרחבה לפתיחה וצמצום של של תוכן העניינים",
+	"prefs-toctree": "תוכן עניינים",
+	"toctree-tog-expand": "הפעלת תוכן עניינים מתרחב",
+	"toctree-tog-floated": "תוכן עניינים צף"
 }

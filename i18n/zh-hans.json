@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Qiyue2001",
-            "Xiaomingyan",
-            "Yfdyh000"
-        ]
-    },
-    "toctree-desc": "对内容表的展开与折叠的扩展",
-    "prefs-toctree": "目录",
-    "toctree-tog-expand": "启用可展开的目录",
-    "toctree-tog-floated": "浮动目录"
+	"@metadata": {
+		"authors": [
+			"Qiyue2001",
+			"Xiaomingyan",
+			"Yfdyh000"
+		]
+	},
+	"toctree-desc": "对内容表的展开与折叠的扩展",
+	"prefs-toctree": "目录",
+	"toctree-tog-expand": "启用可展开的目录",
+	"toctree-tog-floated": "浮动目录"
 }

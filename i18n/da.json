@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Christian List"
-        ]
-    },
-    "toctree-desc": "Udvidelse til udvidelse og skjulning af indholdsfortegnelsen",
-    "prefs-toctree": "Indholdsfortegnelse",
-    "toctree-tog-expand": "Aktivér indholdsfortegnelse der kan udvides",
-    "toctree-tog-floated": "Flydende indholdsfortegnelse"
+	"@metadata": {
+		"authors": [
+			"Christian List"
+		]
+	},
+	"toctree-desc": "Udvidelse til udvidelse og skjulning af indholdsfortegnelsen",
+	"prefs-toctree": "Indholdsfortegnelse",
+	"toctree-tog-expand": "Aktivér indholdsfortegnelse der kan udvides",
+	"toctree-tog-floated": "Flydende indholdsfortegnelse"
 }

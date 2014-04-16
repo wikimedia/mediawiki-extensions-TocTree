@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Siebrand"
-        ]
-    },
-    "toctree-desc": "Uitbreiding voor het inklappen en uitvouwen van de inhoudsopgave",
-    "prefs-toctree": "Inhoudsopgave",
-    "toctree-tog-expand": "Inhoudsopgave uitvouwen inschakelen",
-    "toctree-tog-floated": "Drijvende inhoudsopgave"
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"toctree-desc": "Uitbreiding voor het inklappen en uitvouwen van de inhoudsopgave",
+	"prefs-toctree": "Inhoudsopgave",
+	"toctree-tog-expand": "Inhoudsopgave uitvouwen inschakelen",
+	"toctree-tog-floated": "Drijvende inhoudsopgave"
 }

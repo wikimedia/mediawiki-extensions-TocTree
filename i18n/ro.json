@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Stelistcristi"
-        ]
-    },
-    "prefs-toctree": "Cuprins",
-    "toctree-tog-expand": "Extinde cuprinsul"
+	"@metadata": {
+		"authors": [
+			"Stelistcristi"
+		]
+	},
+	"prefs-toctree": "Cuprins",
+	"toctree-tog-expand": "Extinde cuprinsul"
 }
