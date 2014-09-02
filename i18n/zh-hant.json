@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416"
+		]
+	},
+	"toctree-desc": "可將目錄展開與摺疊的擴充套件",
+	"prefs-toctree": "目錄",
+	"toctree-tog-expand": "開啟可展開的目錄",
+	"toctree-tog-floated": "淨動目錄"
+}
