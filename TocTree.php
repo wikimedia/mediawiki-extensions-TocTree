@@ -38,7 +38,7 @@ $wgResourceModules['ext.toctree'] = array(
 );
 
 // credits
-$wgExtensionCredits['parserhook']['TocTree'] = array(
+$wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'TocTree',
 	'url' => '//www.mediawiki.org/wiki/Extension:TocTree',

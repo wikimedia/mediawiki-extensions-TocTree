@@ -1,0 +1,42 @@
+{
+	"name": "TocTree",
+	"version": "1.12.0",
+	"author": [
+		"Roland Unger",
+		"Matthias Mullie"
+	],
+	"url": "//www.mediawiki.org/wiki/Extension:TocTree",
+	"descriptionmsg": "toctree-desc",
+	"type": "parserhook",
+	"DefaultUserOptions": {
+		"toc-floated": false,
+		"toc-expand": false
+	},
+	"MessagesDirs": {
+		"TocTree": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"TocTree": "TocTree.i18n.php"
+	},
+	"AutoloadClasses": {
+		"TocTreeHooks": "TocTree.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.toctree": {
+			"localBasePath": "modules",
+			"remoteExtPath": "TocTree/modules",
+			"styles": "ext.toctree.css",
+			"scripts": "ext.toctree.js"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"TocTreeHooks::wfTocTreeParserOutput"
+		],
+		"GetPreferences": [
+			"TocTreeHooks::onTocPreferences"
+		]
+	}
+}
