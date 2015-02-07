@@ -44,5 +44,6 @@ $wgExtensionCredits['parserhook']['TocTree'] = array(
 	'url' => '//www.mediawiki.org/wiki/Extension:TocTree',
 	'descriptionmsg' => 'toctree-desc',
 	'author' => array( 'Roland Unger', 'Matthias Mullie' ),
-	'version' => '1.12.0'
+	'version' => '1.12.0',
+	'license-name' => 'GPL-2.0+'
 );
