@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Raymond",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
-	"toctree-desc": "{{desc|name=Toc Tree|url=http://www.mediawiki.org/wiki/Extension:TocTree}}",
+	"toctree-desc": "{{desc|name=Toc Tree|url=https://www.mediawiki.org/wiki/Extension:TocTree}}",
 	"prefs-toctree": "Section header in misc. preferences.\n{{Identical|Table of contents}}",
 	"toctree-tog-expand": "Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].\n\nThis feature enables not only to '''expand''' but also to '''collapse''' (with [+]/[-] buttons).\n\nSee also:\n* {{msg-mw|Toctree-tog-floated}}",
 	"toctree-tog-floated": "Used as label for the checkbox at the {{msg-mw|Prefs-toctree}} section, in the {{msg-mw|Prefs-misc}} tab in [[Special:Preferences]].\n\nSee also:\n* {{msg-mw|Toctree-tog-expand}}"
