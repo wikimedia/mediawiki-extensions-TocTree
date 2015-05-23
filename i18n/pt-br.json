@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Araceletorres"
+		]
+	},
+	"toctree-desc": "Extensão para a expansão e redução da tabela de conteúdos",
+	"prefs-toctree": "Tabela de conteúdos",
+	"toctree-tog-expand": "Ativar tabela expansível de conteúdos",
+	"toctree-tog-floated": "Tabela de conteúdos flutuantes"
+}
