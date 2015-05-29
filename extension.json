@@ -38,5 +38,6 @@
 		"GetPreferences": [
 			"TocTreeHooks::onTocPreferences"
 		]
-	}
+	},
+	"manifest_version": 1
 }
