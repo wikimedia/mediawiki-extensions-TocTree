@@ -5,7 +5,7 @@
 		"Roland Unger",
 		"Matthias Mullie"
 	],
-	"url": "//www.mediawiki.org/wiki/Extension:TocTree",
+	"url": "https://www.mediawiki.org/wiki/Extension:TocTree",
 	"descriptionmsg": "toctree-desc",
 	"type": "parserhook",
 	"DefaultUserOptions": {
