@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wizardist"
+			"Wizardist",
+			"Red Winged Duck"
 		]
 	},
 	"toctree-desc": "Пашырэньне для згортваньня і разгортваньня зьместу старонкі",
 	"prefs-toctree": "Зьмест",
-	"toctree-tog-expand": "Разгарнуць зьмест",
+	"toctree-tog-expand": "Дазволіць разгортваньне табліцы зьместу",
 	"toctree-tog-floated": "Плаваючы зьмест"
 }
