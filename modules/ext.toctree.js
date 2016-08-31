@@ -11,9 +11,9 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
-mw.tocTree = {
-	processClickEvent: function ( event ) {
-		var $ul = $( 'ul', $( this ).parent().parent() );
+( function ( mw, $ ) {
+	function processClickEvent( event ) {
+		var $ul = $( this ).parent().parent().find( 'ul' );
 		$ul.toggle();
 
 		if ( $ul.is( ':visible' ) ) {
@@ -25,9 +25,9 @@ mw.tocTree = {
 				.text( '+' )
 				.attr( 'title', mw.msg( 'showtoc' ) );
 		}
-	},
+	}
 
-	init: function() {
+	function init() {
 		var $toc = $( '#toc' );
 
 		if ( $toc.length > 0 ) {
@@ -36,20 +36,20 @@ mw.tocTree = {
 			}
 			$toc.attr( 'cellspacing', 0 );
 
-			var $mainUl = $( 'ul:first', $toc );
-			var $mainList = $( 'li', $toc );
+			var $mainUl = $toc.find( 'ul:first' );
+			var $mainList = $toc.find( 'li' );
 
-			$mainList.each( function( i ) {
+			$mainList.each( function ( i ) {
 				if ( $( this ).hasClass( 'toclevel-1' ) ) {
 					$( this ).css( 'position', 'relative' );
-					var $subList = $( 'ul', $( this ) );
+					var $subList = $( this ).find( 'ul' );
 
 					if ( $subList.length > 0 ) {
 						if ( $mainUl.length > 0 ) {
 							$mainUl.addClass( 'tocUl' );
 						}
 
-						var $toggleLink = $( '<span />' ).addClass( 'toggleSymbol' );
+						var $toggleLink = $( '<span>' ).addClass( 'toggleSymbol' );
 
 						if ( mw.user.options.get( 'toc-expand' ) ) {
 							$toggleLink
@@ -64,9 +64,9 @@ mw.tocTree = {
 
 							$subList.hide();
 						}
-						$toggleLink.click( mw.tocTree.processClickEvent );
+						$toggleLink.click( processClickEvent );
 
-						var $toggleSpan = $( '<span />' ).addClass( 'toggleNode' );
+						var $toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
 						$toggleSpan.append( '[', $toggleLink, ']' );
 
 						$( this ).prepend( $toggleSpan );
@@ -74,11 +74,7 @@ mw.tocTree = {
 				}
 			} );
 		}
-
-		return true;
 	}
-};
 
-jQuery( function( $ ) {
-	mw.tocTree.init();
-} );
+	$( init );
+}( mediaWiki, jQuery ) );
