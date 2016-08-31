@@ -28,7 +28,11 @@
 			"localBasePath": "modules",
 			"remoteExtPath": "TocTree/modules",
 			"styles": "ext.toctree.css",
-			"scripts": "ext.toctree.js"
+			"scripts": "ext.toctree.js",
+			"messages": [
+				"hidetoc",
+				"showtoc"
+			]
 		}
 	},
 	"Hooks": {

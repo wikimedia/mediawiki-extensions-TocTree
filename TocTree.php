@@ -35,6 +35,10 @@ $wgResourceModules['ext.toctree'] = [
 	'remoteExtPath' => 'TocTree/modules',
 	'styles' => 'ext.toctree.css',
 	'scripts' => 'ext.toctree.js',
+	'messages' => [
+		'hidetoc',
+		'showtoc'
+	]
 ];
 
 // credits
