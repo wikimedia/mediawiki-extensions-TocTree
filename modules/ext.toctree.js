@@ -27,8 +27,8 @@
 		}
 	}
 
-	function init() {
-		var $toc = $( '.toc' );
+	function init( $content ) {
+		var $toc = $content.find( '.toc' ).addBack( '.toc' );
 
 		if ( $toc.length > 0 ) {
 			if ( mw.user.options.get( 'toc-floated' ) ) {
@@ -75,5 +75,5 @@
 		}
 	}
 
-	$( init );
+	mw.hook( 'wikipage.content' ).add( init );
 }( mediaWiki, jQuery ) );
