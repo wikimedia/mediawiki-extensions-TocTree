@@ -24,17 +24,17 @@ class TocTreeHooks {
 	 * @return bool
 	 */
 	public static function onTocPreferences( User $user, array &$preferences ) {
-		$preferences['toc-expand'] = array(
+		$preferences['toc-expand'] = [
 			'type' => 'toggle',
 			'label-message' => 'toctree-tog-expand',
 			'section' => 'misc/toctree',
-		);
+		];
 
-		$preferences['toc-floated'] = array(
+		$preferences['toc-floated'] = [
 			'type' => 'toggle',
 			'label-message' => 'toctree-tog-floated',
 			'section' => 'misc/toctree',
-		);
+		];
 
 		return true;
 	}

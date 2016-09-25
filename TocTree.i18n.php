@@ -10,10 +10,10 @@
  *
  * This shim maintains compatibility back to MediaWiki 1.17.
  */
-$messages = array();
+$messages = [];
 if ( !function_exists( 'wfJsonI18nShimbe1c9ea43bd38a62' ) ) {
 	function wfJsonI18nShimbe1c9ea43bd38a62( $cache, $code, &$cachedData ) {
-		$codeSequence = array_merge( array( $code ), $cachedData['fallbackSequence'] );
+		$codeSequence = array_merge( [ $code ], $cachedData['fallbackSequence'] );
 		foreach ( $codeSequence as $csCode ) {
 			$fileName = dirname( __FILE__ ) . "/i18n/$csCode.json";
 			if ( is_readable( $fileName ) ) {

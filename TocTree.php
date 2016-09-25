@@ -30,20 +30,20 @@ $wgDefaultUserOptions['toc-floated'] = false;
 $wgDefaultUserOptions['toc-expand'] = false;
 
 // resources
-$wgResourceModules['ext.toctree'] = array(
+$wgResourceModules['ext.toctree'] = [
 	'localBasePath' => __DIR__ . '/modules',
 	'remoteExtPath' => 'TocTree/modules',
 	'styles' => 'ext.toctree.css',
 	'scripts' => 'ext.toctree.js',
-);
+];
 
 // credits
-$wgExtensionCredits['parserhook'][] = array(
+$wgExtensionCredits['parserhook'][] = [
 	'path' => __FILE__,
 	'name' => 'TocTree',
 	'url' => '//www.mediawiki.org/wiki/Extension:TocTree',
 	'descriptionmsg' => 'toctree-desc',
-	'author' => array( 'Roland Unger', 'Matthias Mullie' ),
+	'author' => [ 'Roland Unger', 'Matthias Mullie' ],
 	'version' => '1.12.0',
 	'license-name' => 'GPL-2.0+'
-);
+];
