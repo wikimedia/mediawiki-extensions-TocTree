@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Matma Rex",
-			"WTM"
+			"WTM",
+			"Woytecr"
 		]
 	},
+	"toctree-desc": "Rozszerzenie dodające funkcję rozwijania i zwijania spisu treści",
 	"prefs-toctree": "Spis treści",
 	"toctree-tog-expand": "Włącz rozwijalny spis treści",
 	"toctree-tog-floated": "Spis treści z boku"
