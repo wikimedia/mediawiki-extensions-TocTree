@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"toctree-desc": "Extensão para a expansão e colapso do índice",
+	"prefs-toctree": "Índice",
+	"toctree-tog-expand": "Ativar o índice expansível",
+	"toctree-tog-floated": "Índice flutuante"
+}
