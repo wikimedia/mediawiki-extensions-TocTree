@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"toctree-desc": "Utvidelse for å vise og skjule innholdsfortegnelsen",
+	"prefs-toctree": "Innholdsfortegnelse",
+	"toctree-tog-expand": "Slå på utvidbar innholdsfortegnelse",
+	"toctree-tog-floated": "Flytende innholdsfortegnelse"
+}
