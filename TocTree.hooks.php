@@ -10,7 +10,7 @@ class TocTreeHooks {
 	 * @param OutputPage $out
 	 * @return bool
 	 */
-	public static function wfTocTreeParserOutput( OutputPage &$out )  {
+	public static function wfTocTreeParserOutput( OutputPage &$out ) {
 		$out->addModules( 'ext.toctree' );
 
 		return true;
