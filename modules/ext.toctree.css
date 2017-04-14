@@ -9,10 +9,12 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
+.toc .tocUl,
 #toc .tocUl {
 	padding-left: 2em;
 }
 
+.toc.tocFloat,
 #toc.tocFloat {
 	float: left;
 	margin: 0 2em 1em 0;
@@ -30,6 +32,7 @@
 	left: -2em;
 }
 
+.noFloat .toc.tocFloat,
 .noFloat #toc.tocFloat {
 	float: none;
 	margin: 0;
@@ -37,12 +40,14 @@
 }
 
 /* toc-floated CSS */
+.toc.tocFloat,
 #toc.tocFloat {
 	float: left;
 	margin: 0 2em 1em 0;
 	max-width: 20em;
 }
 
+.noFloat .toc.tocFloat,
 .noFloat #toc.tocFloat {
 	float: none;
 	margin: 0;
@@ -50,6 +55,7 @@
 }
 
 @media print {
+	.toc.tocFloat,
 	#toc.tocFloat {
 		background: #ffffff;
 	}
@@ -58,6 +64,7 @@
 		display: none;
 	}
 
+	.toc .tocUl,
 	#toc .tocUl {
 		padding-left: 0;
 	}

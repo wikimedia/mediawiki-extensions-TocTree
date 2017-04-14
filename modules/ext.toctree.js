@@ -28,13 +28,12 @@
 	}
 
 	function init() {
-		var $toc = $( '#toc' );
+		var $toc = $( '.toc' );
 
 		if ( $toc.length > 0 ) {
 			if ( mw.user.options.get( 'toc-floated' ) ) {
 				$toc.addClass( 'tocFloat' );
 			}
-			$toc.attr( 'cellspacing', 0 );
 
 			var $mainUl = $toc.find( 'ul:first' );
 			var $mainList = $toc.find( 'li' );
