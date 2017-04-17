@@ -22,7 +22,7 @@
 }
 
 .toggleSymbol {
-	color: #0000ff;
+	color: #00f;
 	cursor: pointer;
 }
 
@@ -57,7 +57,7 @@
 @media print {
 	.toc.tocFloat,
 	#toc.tocFloat {
-		background: #ffffff;
+		background: #fff;
 	}
 
 	.toggleNode {
