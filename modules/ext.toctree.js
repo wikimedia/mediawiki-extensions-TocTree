@@ -12,7 +12,7 @@
  */
 
 ( function ( mw, $ ) {
-	function processClickEvent( event ) {
+	function processClickEvent() {
 		var $ul = $( this ).parent().parent().find( 'ul' );
 		$ul.toggle();
 
@@ -28,23 +28,24 @@
 	}
 
 	function init( $content ) {
-		var $toc = $content.find( '.toc' ).addBack( '.toc' );
+		var $toc = $content.find( '.toc' ).addBack( '.toc' ),
+			$mainUl = $toc.find( 'ul:first' ),
+			$mainList = $toc.find( 'li.toclevel-1' );
 
 		if ( mw.user.options.get( 'toc-floated' ) ) {
 			$toc.addClass( 'tocFloat' );
 		}
 
-		var $mainUl = $toc.find( 'ul:first' );
-		var $mainList = $toc.find( 'li.toclevel-1' );
+		$mainList.each( function () {
+			var $subList, $toggleLink, $toggleSpan;
 
-		$mainList.each( function ( i ) {
 			$( this ).css( 'position', 'relative' );
-			var $subList = $( this ).find( 'ul' );
+			$subList = $( this ).find( 'ul' );
 
 			if ( $subList.length > 0 ) {
 				$mainUl.addClass( 'tocUl' );
 
-				var $toggleLink = $( '<span>' ).addClass( 'toggleSymbol' );
+				$toggleLink = $( '<span>' ).addClass( 'toggleSymbol' );
 
 				if ( mw.user.options.get( 'toc-expand' ) ) {
 					$toggleLink
@@ -61,7 +62,7 @@
 				}
 				$toggleLink.click( processClickEvent );
 
-				var $toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
+				$toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
 				$toggleSpan.append( '[', $toggleLink, ']' );
 
 				$( this ).prepend( $toggleSpan );
