@@ -5,8 +5,8 @@
 			"Fitoschido"
 		]
 	},
-	"toctree-desc": "Extensión para la expansión y contracción de la tabla de contenidos",
-	"prefs-toctree": "Tabla de contenidos",
-	"toctree-tog-expand": "Activar la tabla de contenidos expandible",
-	"toctree-tog-floated": "Tabla de contenidos flotante"
+	"toctree-desc": "Extensión para la expansión y contracción del sumario",
+	"prefs-toctree": "Sumario",
+	"toctree-tog-expand": "Activar el sumario expandible",
+	"toctree-tog-floated": "Sumario flotante"
 }
