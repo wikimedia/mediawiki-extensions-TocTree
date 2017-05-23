@@ -11,7 +11,9 @@ class TocTreeHooks {
 	 * @return bool
 	 */
 	public static function wfTocTreeParserOutput( OutputPage &$out ) {
-		$out->addModules( 'ext.toctree' );
+		if ( $out->isTOCEnabled() ) {
+			$out->addModules( 'ext.toctree' );
+		}
 
 		return true;
 	}
