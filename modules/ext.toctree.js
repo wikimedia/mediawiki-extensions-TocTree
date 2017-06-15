@@ -18,7 +18,7 @@
 
 		if ( $ul.is( ':visible' ) ) {
 			$( this )
-				.text( '-' )
+				.text( '−' )
 				.attr( 'title', mw.msg( 'hidetoc' ) );
 		} else {
 			$( this )
@@ -49,7 +49,7 @@
 
 				if ( mw.user.options.get( 'toc-expand' ) ) {
 					$toggleLink
-						.text( '-' )
+						.text( '−' )
 						.attr( 'title', mw.msg( 'hidetoc' ) );
 
 					$subList.show();
