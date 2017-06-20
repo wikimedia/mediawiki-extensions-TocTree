@@ -17,9 +17,6 @@
 			"i18n"
 		]
 	},
-	"ExtensionMessagesFiles": {
-		"TocTree": "TocTree.i18n.php"
-	},
 	"AutoloadClasses": {
 		"TocTreeHooks": "TocTree.hooks.php"
 	},

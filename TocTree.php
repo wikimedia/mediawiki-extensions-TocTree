@@ -16,7 +16,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 // extension i18n
 $wgMessagesDirs['TocTree'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['TocTree'] = __DIR__ . '/TocTree.i18n.php';
 
 // autoloader
 $wgAutoloadClasses['TocTreeHooks'] = __DIR__ . '/TocTree.hooks.php';
