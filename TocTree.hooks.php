@@ -7,7 +7,7 @@ class TocTreeHooks {
 	/**
 	 * Hook: BeforePageDisplay
 	 *
-	 * @param OutputPage $out
+	 * @param OutputPage &$out OutputPage object
 	 * @return bool
 	 */
 	public static function wfTocTreeParserOutput( OutputPage &$out ) {
@@ -21,8 +21,8 @@ class TocTreeHooks {
 	/**
 	 * Hook: GetPreferences
 	 *
-	 * @param User $user
-	 * @param array $preferences
+	 * @param User $user User whose preferences are being modified
+	 * @param array &$preferences Preferences description array
 	 * @return bool
 	 */
 	public static function onTocPreferences( User $user, array &$preferences ) {
