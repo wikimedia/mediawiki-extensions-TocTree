@@ -19,7 +19,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"TocTreeHooks": "TocTree.hooks.php"
+		"TocTreeHooks": "TocTreeHooks.php"
 	},
 	"ResourceModules": {
 		"ext.toctree": {
