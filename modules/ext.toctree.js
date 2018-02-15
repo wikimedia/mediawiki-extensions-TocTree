@@ -13,7 +13,7 @@
 
 ( function ( mw, $ ) {
 	function processClickEvent() {
-		var $ul = $( this ).parent().parent().find( 'ul' );
+		var $ul = $( this ).parent().parent().children( 'ul' );
 		$ul.toggle();
 
 		if ( $ul.is( ':visible' ) ) {
@@ -40,7 +40,7 @@
 			var $subList, $toggleLink, $toggleSpan;
 
 			$( this ).css( 'position', 'relative' );
-			$subList = $( this ).find( 'ul' );
+			$subList = $( this ).children( 'ul' );
 
 			if ( $subList.length > 0 ) {
 				$mainUl.addClass( 'tocUl' );
