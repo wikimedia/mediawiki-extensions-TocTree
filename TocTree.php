@@ -48,5 +48,5 @@ $wgExtensionCredits['parserhook'][] = [
 	'descriptionmsg' => 'toctree-desc',
 	'author' => [ 'Roland Unger', 'Matthias Mullie' ],
 	'version' => '1.12.0',
-	'license-name' => 'GPL-2.0+'
+	'license-name' => 'GPL-2.0-or-later'
 ];

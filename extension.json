@@ -5,7 +5,7 @@
 		"Roland Unger",
 		"Matthias Mullie"
 	],
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:TocTree",
 	"descriptionmsg": "toctree-desc",
 	"type": "parserhook",
