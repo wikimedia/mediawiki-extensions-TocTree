@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"toctree-desc": "ملحق لتوسع وطي جدول المحتويات",
+	"prefs-toctree": "جدول المحتويات",
+	"toctree-tog-expand": "تمكين جدول المحتويات القابل للتوسيع",
+	"toctree-tog-floated": "جدول المحتويات العائم"
+}
