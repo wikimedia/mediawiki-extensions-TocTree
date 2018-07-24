@@ -37,7 +37,7 @@
 		}
 
 		$mainList.each( function () {
-			var $subList, $toggleLink, $toggleSpan;
+			var $subList, $toggleSymbol, $toggleSpan;
 
 			$( this ).css( 'position', 'relative' );
 			$subList = $( this ).children( 'ul' );
@@ -45,25 +45,25 @@
 			if ( $subList.length > 0 ) {
 				$mainUl.addClass( 'tocUl' );
 
-				$toggleLink = $( '<span>' ).addClass( 'toggleSymbol' );
+				$toggleSymbol = $( '<span>' ).addClass( 'toggleSymbol' );
 
 				if ( mw.user.options.get( 'toc-expand' ) ) {
-					$toggleLink
+					$toggleSymbol
 						.text( '−' )
 						.attr( 'title', mw.msg( 'hidetoc' ) );
 
 					$subList.show();
 				} else {
-					$toggleLink
+					$toggleSymbol
 						.text( '+' )
 						.attr( 'title', mw.msg( 'showtoc' ) );
 
 					$subList.hide();
 				}
-				$toggleLink.click( processClickEvent );
+				$toggleSymbol.click( processClickEvent );
 
 				$toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
-				$toggleSpan.append( '[', $toggleLink, ']' );
+				$toggleSpan.append( '[', $toggleSymbol, ']' );
 
 				$( this ).prepend( $toggleSpan );
 			}
