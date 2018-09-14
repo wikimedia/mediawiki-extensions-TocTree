@@ -29,8 +29,7 @@
 
 	function init( $content ) {
 		var $toc = $content.find( '.toc' ).addBack( '.toc' ),
-			$mainUl = $toc.find( 'ul:first' ),
-			$mainList = $toc.find( 'li.toclevel-1' );
+			$mainList = $toc.children( 'ul' ).children( 'li.toclevel-1' );
 
 		if ( mw.user.options.get( 'toc-floated' ) ) {
 			$toc.addClass( 'tocFloat' );
@@ -43,7 +42,7 @@
 			$subList = $( this ).children( 'ul' );
 
 			if ( $subList.length > 0 ) {
-				$mainUl.addClass( 'tocUl' );
+				$( this ).parent().addClass( 'tocUl' );
 
 				$toggleSymbol = $( '<span>' ).addClass( 'toggleSymbol' );
 
