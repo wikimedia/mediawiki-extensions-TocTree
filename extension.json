@@ -35,10 +35,10 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": [
-			"TocTreeHooks::wfTocTreeParserOutput"
+			"TocTreeHooks::onBeforePageDisplay"
 		],
 		"GetPreferences": [
-			"TocTreeHooks::onTocPreferences"
+			"TocTreeHooks::onGetPreferences"
 		]
 	},
 	"manifest_version": 1

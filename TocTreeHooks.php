@@ -10,7 +10,7 @@ class TocTreeHooks {
 	 * @param OutputPage &$out OutputPage object
 	 * @return bool
 	 */
-	public static function wfTocTreeParserOutput( OutputPage &$out ) {
+	public static function onBeforePageDisplay( OutputPage &$out ) {
 		if ( $out->isTOCEnabled() ) {
 			$out->addModules( 'ext.toctree' );
 		}
@@ -25,7 +25,7 @@ class TocTreeHooks {
 	 * @param array &$preferences Preferences description array
 	 * @return bool
 	 */
-	public static function onTocPreferences( User $user, array &$preferences ) {
+	public static function onGetPreferences( User $user, array &$preferences ) {
 		$preferences['toc-expand'] = [
 			'type' => 'toggle',
 			'label-message' => 'toctree-tog-expand',

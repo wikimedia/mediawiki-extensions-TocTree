@@ -21,8 +21,8 @@ $wgMessagesDirs['TocTree'] = __DIR__ . '/i18n';
 $wgAutoloadClasses['TocTreeHooks'] = __DIR__ . '/TocTreeHooks.php';
 
 // hooks
-$wgHooks['BeforePageDisplay'][] = 'TocTreeHooks::wfTocTreeParserOutput';
-$wgHooks['GetPreferences'][] = 'TocTreeHooks::onTocPreferences';
+$wgHooks['BeforePageDisplay'][] = 'TocTreeHooks::onBeforePageDisplay';
+$wgHooks['GetPreferences'][] = 'TocTreeHooks::onGetPreferences';
 
 // default user options
 $wgDefaultUserOptions['toc-floated'] = false;
