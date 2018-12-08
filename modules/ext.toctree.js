@@ -11,7 +11,7 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
-( function ( mw, $ ) {
+( function () {
 	function processClickEvent() {
 		var $ul = $( this ).parent().parent().children( 'ul' );
 		$ul.toggle();
@@ -71,4 +71,4 @@
 	}
 
 	mw.hook( 'wikipage.content' ).add( init );
-}( mediaWiki, jQuery ) );
+}() );
