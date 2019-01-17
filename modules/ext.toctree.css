@@ -13,10 +13,19 @@
 	padding-left: 2em;
 }
 
+/* toc-floated CSS */
 .toc.tocFloat {
 	float: left;
 	margin: 0 2em 1em 0;
 	width: 20em;
+	max-width: 20em;
+}
+
+.noFloat .toc.tocFloat {
+	float: none;
+	margin: 0;
+	width: auto;
+	max-width: auto;
 }
 
 .toggleSymbol {
@@ -28,25 +37,6 @@
 	position: absolute;
 	top: 0;
 	left: -2em;
-}
-
-.noFloat .toc.tocFloat {
-	float: none;
-	margin: 0;
-	width: auto;
-}
-
-/* toc-floated CSS */
-.toc.tocFloat {
-	float: left;
-	margin: 0 2em 1em 0;
-	max-width: 20em;
-}
-
-.noFloat .toc.tocFloat {
-	float: none;
-	margin: 0;
-	max-width: auto;
 }
 
 @media print {
