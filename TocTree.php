@@ -18,7 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgMessagesDirs['TocTree'] = __DIR__ . '/i18n';
 
 // autoloader
-$wgAutoloadClasses['TocTreeHooks'] = __DIR__ . '/TocTreeHooks.php';
+$wgAutoloadClasses['TocTreeHooks'] = __DIR__ . '/includes/TocTreeHooks.php';
 
 // hooks
 $wgHooks['BeforePageDisplay'][] = 'TocTreeHooks::onBeforePageDisplay';
