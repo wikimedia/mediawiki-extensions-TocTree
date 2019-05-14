@@ -6,6 +6,8 @@
 
 namespace MediaWiki\Extension\TocTree;
 
+use ApiBase;
+use MediaWiki\Api\Hook\ApiParseMakeOutputPageHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use OutputPage;
@@ -13,9 +15,23 @@ use Skin;
 use User;
 
 class Hooks implements
+	ApiParseMakeOutputPageHook,
 	BeforePageDisplayHook,
 	GetPreferencesHook
 {
+	/**
+	 * Hook: ApiParseMakeOutputPage
+	 *
+	 * @param ApiBase $module ApiBase object
+	 * @param OutputPage $out OutputPage object
+	 * @return bool|void True or no return value to continue or false to abort
+	 */
+	public function onApiParseMakeOutputPage( $module, $out ) {
+		if ( $out->isTOCEnabled() ) {
+			$out->addModules( 'ext.toctree' );
+		}
+	}
+
 	/**
 	 * Hook: BeforePageDisplay
 	 *
