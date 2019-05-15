@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stelistcristi"
+			"Stelistcristi",
+			"Andrei Stroe"
 		]
 	},
 	"prefs-toctree": "Cuprins",
-	"toctree-tog-expand": "Extinde cuprinsul"
+	"toctree-tog-expand": "Activează cuprins pliabil"
 }
