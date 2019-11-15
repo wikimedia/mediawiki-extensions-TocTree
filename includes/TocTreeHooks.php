@@ -7,9 +7,9 @@ class TocTreeHooks {
 	/**
 	 * Hook: BeforePageDisplay
 	 *
-	 * @param OutputPage &$out OutputPage object
+	 * @param OutputPage $out OutputPage object
 	 */
-	public static function onBeforePageDisplay( OutputPage &$out ) {
+	public static function onBeforePageDisplay( OutputPage $out ) {
 		if ( $out->isTOCEnabled() ) {
 			$out->addModules( 'ext.toctree' );
 		}
