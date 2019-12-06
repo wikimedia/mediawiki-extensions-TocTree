@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"toctree-desc": "İçindekiler tablosunun genişlemesi ve daraltılması için uzantı",
+	"prefs-toctree": "İçindekiler",
+	"toctree-tog-expand": "Genişletilebilir içindekileri etkinleştir",
+	"toctree-tog-floated": "İçindekiler tablosu"
+}
