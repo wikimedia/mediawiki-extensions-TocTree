@@ -1,4 +1,4 @@
-/*
+/**
  * JavaScript functions for the TocTree extension
  * to display the toc structure
  *
@@ -8,7 +8,7 @@
  * @author Matthias Mullie
  * @copyright © 2007 Roland Unger
  * v1.0 of 2007/11/04
- * @licence GNU General Public Licence 2.0 or later
+ * @licence GPL-2.0-or-later
  */
 
 ( function () {

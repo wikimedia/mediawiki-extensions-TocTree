@@ -1,5 +1,6 @@
 <?php
-/*
+
+/**
  * Setup and Hooks for the TocTree extension
  *
  * @package MediaWiki
