@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Qiyue2001",
+			"Shizhao",
 			"Xiaomingyan",
-			"Yfdyh000",
-			"Shizhao"
+			"Yfdyh000"
 		]
 	},
 	"toctree-desc": "对目录展开与折叠的扩展",
