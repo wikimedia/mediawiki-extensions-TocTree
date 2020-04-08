@@ -1,53 +1,15 @@
 <?php
 
-/**
- * Setup and Hooks for the TocTree extension
- *
- * @package MediaWiki
- * @subpackage Extensions
- *
- * @author Roland Unger
- * @copyright Copyright © 2007 - 2012 Roland Unger
- * @license GPL-2.0-or-later
- */
-
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'TocTree' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['TocTree'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for TocTree extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the TocTree extension requires MediaWiki 1.32+' );
 }
-
-// extension i18n
-$wgMessagesDirs['TocTree'] = __DIR__ . '/i18n';
-
-// autoloader
-$wgAutoloadClasses['TocTreeHooks'] = __DIR__ . '/includes/TocTreeHooks.php';
-
-// hooks
-$wgHooks['BeforePageDisplay'][] = 'TocTreeHooks::onBeforePageDisplay';
-$wgHooks['GetPreferences'][] = 'TocTreeHooks::onGetPreferences';
-
-// default user options
-$wgDefaultUserOptions['toc-floated'] = false;
-$wgDefaultUserOptions['toc-expand'] = false;
-
-// resources
-$wgResourceModules['ext.toctree'] = [
-	'localBasePath' => __DIR__ . '/modules',
-	'remoteExtPath' => 'TocTree/modules',
-	'styles' => 'ext.toctree.css',
-	'scripts' => 'ext.toctree.js',
-	'messages' => [
-		'hidetoc',
-		'showtoc'
-	]
-];
-
-// credits
-$wgExtensionCredits['parserhook'][] = [
-	'path' => __FILE__,
-	'name' => 'TocTree',
-	'url' => '//www.mediawiki.org/wiki/Extension:TocTree',
-	'descriptionmsg' => 'toctree-desc',
-	'author' => [ 'Roland Unger', 'Matthias Mullie' ],
-	'version' => '1.12.0',
-	'license-name' => 'GPL-2.0-or-later'
-];

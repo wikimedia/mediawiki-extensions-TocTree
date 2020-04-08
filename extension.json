@@ -9,6 +9,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:TocTree",
 	"descriptionmsg": "toctree-desc",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
 	"DefaultUserOptions": {
 		"toc-floated": false,
 		"toc-expand": false
