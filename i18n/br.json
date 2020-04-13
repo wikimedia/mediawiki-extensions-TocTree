@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fulup",
 			"Y-M D"
 		]
 	},
-	"toctree-desc": "Astenn evit displegañ ha krennañ an daolenn.",
+	"toctree-desc": "Astenn evit dispakañ ha dastum an daolenn.",
 	"prefs-toctree": "Taolenn",
-	"toctree-tog-expand": "Displegañ an daolenn"
+	"toctree-tog-expand": "Aotren dispakañ an daolenn",
+	"toctree-tog-floated": "Taolenn war neuñv"
 }
