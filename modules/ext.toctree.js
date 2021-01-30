@@ -59,7 +59,7 @@
 
 					$subList.hide();
 				}
-				$toggleSymbol.click( processClickEvent );
+				$toggleSymbol.on( 'click', processClickEvent );
 
 				$toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
 				$toggleSpan.append( '[', $toggleSymbol, ']' );
