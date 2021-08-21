@@ -16,7 +16,7 @@
 		var $ul = $( this ).parent().parent().children( 'ul' );
 		$ul.toggle();
 
-		if ( $ul.is( ':visible' ) ) {
+		if ( $ul.css( 'display' ) !== 'none' ) {
 			$( this )
 				.text( '−' )
 				.attr( 'title', mw.msg( 'hidetoc' ) );
@@ -51,13 +51,13 @@
 						.text( '−' )
 						.attr( 'title', mw.msg( 'hidetoc' ) );
 
-					$subList.show();
+					$subList.css( 'display', '' );
 				} else {
 					$toggleSymbol
 						.text( '+' )
 						.attr( 'title', mw.msg( 'showtoc' ) );
 
-					$subList.hide();
+					$subList.css( 'display', 'none' );
 				}
 				$toggleSymbol.on( 'click', processClickEvent );
 

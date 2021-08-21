@@ -7,8 +7,5 @@
 	],
 	"env": {
 		"browser": true
-	},
-	"rules": {
-		"no-jquery/no-sizzle": "warn"
 	}
 }
