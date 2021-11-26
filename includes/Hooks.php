@@ -3,7 +3,13 @@
 /**
  * Some hooks for TocTree extension.
  */
-class TocTreeHooks {
+
+namespace MediaWiki\Extension\TocTree;
+
+use OutputPage;
+use User;
+
+class Hooks {
 	/**
 	 * Hook: BeforePageDisplay
 	 *

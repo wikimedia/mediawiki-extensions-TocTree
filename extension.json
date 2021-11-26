@@ -21,8 +21,8 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"TocTreeHooks": "includes/TocTreeHooks.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TocTree\\": "includes/"
 	},
 	"ResourceModules": {
 		"ext.toctree": {
@@ -41,10 +41,10 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": [
-			"TocTreeHooks::onBeforePageDisplay"
+			"MediaWiki\\Extension\\TocTree\\Hooks::onBeforePageDisplay"
 		],
 		"GetPreferences": [
-			"TocTreeHooks::onGetPreferences"
+			"MediaWiki\\Extension\\TocTree\\Hooks::onGetPreferences"
 		]
 	},
 	"manifest_version": 2
