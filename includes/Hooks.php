@@ -6,16 +6,23 @@
 
 namespace MediaWiki\Extension\TocTree;
 
+use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use OutputPage;
+use Skin;
 use User;
 
-class Hooks {
+class Hooks implements
+	BeforePageDisplayHook,
+	GetPreferencesHook
+{
 	/**
 	 * Hook: BeforePageDisplay
 	 *
 	 * @param OutputPage $out OutputPage object
+	 * @param Skin $skin Skin object
 	 */
-	public static function onBeforePageDisplay( OutputPage $out ) {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( $out->isTOCEnabled() ) {
 			$out->addModules( 'ext.toctree' );
 		}
@@ -27,7 +34,7 @@ class Hooks {
 	 * @param User $user User whose preferences are being modified
 	 * @param array &$preferences Preferences description array
 	 */
-	public static function onGetPreferences( User $user, array &$preferences ) {
+	public function onGetPreferences( $user, &$preferences ) {
 		$preferences['toc-expand'] = [
 			'type' => 'toggle',
 			'label-message' => 'toctree-tog-expand',

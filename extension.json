@@ -10,7 +10,7 @@
 	"descriptionmsg": "toctree-desc",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.32.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"DefaultUserOptions": {
 		"toc-floated": false,
@@ -40,12 +40,13 @@
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": [
-			"MediaWiki\\Extension\\TocTree\\Hooks::onBeforePageDisplay"
-		],
-		"GetPreferences": [
-			"MediaWiki\\Extension\\TocTree\\Hooks::onGetPreferences"
-		]
+		"BeforePageDisplay": "TocTreeHooks",
+		"GetPreferences": "TocTreeHooks"
+	},
+	"HookHandlers": {
+		"TocTreeHooks": {
+			"class": "MediaWiki\\Extension\\TocTree\\Hooks"
+		}
 	},
 	"manifest_version": 2
 }
