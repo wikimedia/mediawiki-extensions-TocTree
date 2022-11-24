@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"toctree-desc": "Extension pro (dis)plicar le tabula de contento",
+	"prefs-toctree": "Tabula de contento",
+	"toctree-tog-expand": "Activar le tabula de contento displicabile",
+	"toctree-tog-floated": "Tabula de contento flottante"
+}
