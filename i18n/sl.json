@@ -4,5 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"prefs-toctree": "Kazalo vsebine"
+	"toctree-desc": "Razširitev za razširitev in strnitev kazala vsebine",
+	"prefs-toctree": "Kazalo vsebine",
+	"toctree-tog-expand": "Omogoči razširljivo kazalo vsebine",
+	"toctree-tog-floated": "Lebdeče kazalo vsebine"
 }
