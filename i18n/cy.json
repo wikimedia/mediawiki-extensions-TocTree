@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Afalau"
 		]
 	},
 	"toctree-desc": "Estyniad sy'n chwyddo a chrebachu'r mynegai i gynnwys tudalen",
-	"prefs-toctree": "Mynegai i gynnwys tudalen",
+	"prefs-toctree": "Tabl cynnwys",
 	"toctree-tog-expand": "Galluogi cuddio a datguddio'r mynegai i gynnwys tudalen",
 	"toctree-tog-floated": "Mynegai i gynnwys tudalen sy'n arnofio"
 }
