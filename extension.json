@@ -10,7 +10,7 @@
 	"descriptionmsg": "toctree-desc",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"DefaultUserOptions": {
 		"toc-floated": false,
