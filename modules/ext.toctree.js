@@ -3,12 +3,11 @@
  * to display the toc structure
  *
  * @package MediaWiki
- * @subpackage Extensions
  * @author Roland Unger
  * @author Matthias Mullie
  * @copyright © 2007 Roland Unger
  * v1.0 of 2007/11/04
- * @licence GPL-2.0-or-later
+ * @license GPL-2.0-or-later
  */
 
 ( function () {
