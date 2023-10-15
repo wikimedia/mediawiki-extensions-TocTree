@@ -5,6 +5,9 @@
 		"wikimedia/mediawiki",
 		"wikimedia/jquery"
 	],
+	"rules": {
+		"no-implicit-globals": "off"
+	},
 	"env": {
 		"browser": true
 	}
