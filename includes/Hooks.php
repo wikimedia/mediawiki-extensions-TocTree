@@ -20,6 +20,15 @@ class Hooks implements
 	GetPreferencesHook
 {
 	/**
+	 * @param OutputPage $out
+	 */
+	private function addModules( OutputPage $out ) {
+		if ( $out->isTOCEnabled() ) {
+			$out->addModules( 'ext.toctree' );
+		}
+	}
+
+	/**
 	 * Hook: ApiParseMakeOutputPage
 	 *
 	 * @param ApiBase $module ApiBase object
@@ -27,9 +36,7 @@ class Hooks implements
 	 * @return bool|void True or no return value to continue or false to abort
 	 */
 	public function onApiParseMakeOutputPage( $module, $out ) {
-		if ( $out->isTOCEnabled() ) {
-			$out->addModules( 'ext.toctree' );
-		}
+		$this->addModules( $out );
 	}
 
 	/**
@@ -39,9 +46,7 @@ class Hooks implements
 	 * @param Skin $skin Skin object
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
-		if ( $out->isTOCEnabled() ) {
-			$out->addModules( 'ext.toctree' );
-		}
+		$this->addModules( $out );
 	}
 
 	/**
