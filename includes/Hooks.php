@@ -9,10 +9,10 @@ namespace MediaWiki\Extension\TocTree;
 use ApiBase;
 use MediaWiki\Api\Hook\ApiParseMakeOutputPageHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
-use OutputPage;
+use MediaWiki\User\User;
 use Skin;
-use User;
 
 class Hooks implements
 	ApiParseMakeOutputPageHook,
