@@ -10,63 +10,61 @@
  * @license GPL-2.0-or-later
  */
 
-( function () {
-	function processClickEvent() {
-		var $ul = $( this ).parent().parent().children( 'ul' );
-		$ul.toggle();
+function processClickEvent() {
+	var $ul = $( this ).parent().parent().children( 'ul' );
+	$ul.toggle();
 
-		if ( $ul.css( 'display' ) !== 'none' ) {
-			$( this )
-				.text( '−' )
-				.attr( 'title', mw.msg( 'hidetoc' ) );
-		} else {
-			$( this )
-				.text( '+' )
-				.attr( 'title', mw.msg( 'showtoc' ) );
-		}
+	if ( $ul.css( 'display' ) !== 'none' ) {
+		$( this )
+			.text( '−' )
+			.attr( 'title', mw.msg( 'hidetoc' ) );
+	} else {
+		$( this )
+			.text( '+' )
+			.attr( 'title', mw.msg( 'showtoc' ) );
+	}
+}
+
+function init( $content ) {
+	var $toc = $content.find( '.toc' ).addBack( '.toc' ),
+		$mainList = $toc.children( 'ul' ).children( 'li.toclevel-1' );
+
+	if ( mw.user.options.get( 'toc-floated' ) ) {
+		$toc.addClass( 'tocFloat' );
 	}
 
-	function init( $content ) {
-		var $toc = $content.find( '.toc' ).addBack( '.toc' ),
-			$mainList = $toc.children( 'ul' ).children( 'li.toclevel-1' );
+	$mainList.each( function () {
+		var $subList, $toggleSymbol, $toggleSpan;
 
-		if ( mw.user.options.get( 'toc-floated' ) ) {
-			$toc.addClass( 'tocFloat' );
-		}
+		$( this ).css( 'position', 'relative' );
+		$subList = $( this ).children( 'ul' );
 
-		$mainList.each( function () {
-			var $subList, $toggleSymbol, $toggleSpan;
+		if ( $subList.length > 0 ) {
+			$( this ).parent().addClass( 'tocUl' );
 
-			$( this ).css( 'position', 'relative' );
-			$subList = $( this ).children( 'ul' );
+			$toggleSymbol = $( '<span>' ).addClass( 'toggleSymbol' );
 
-			if ( $subList.length > 0 ) {
-				$( this ).parent().addClass( 'tocUl' );
+			if ( mw.user.options.get( 'toc-expand' ) ) {
+				$toggleSymbol
+					.text( '−' )
+					.attr( 'title', mw.msg( 'hidetoc' ) );
 
-				$toggleSymbol = $( '<span>' ).addClass( 'toggleSymbol' );
+				$subList.css( 'display', '' );
+			} else {
+				$toggleSymbol
+					.text( '+' )
+					.attr( 'title', mw.msg( 'showtoc' ) );
 
-				if ( mw.user.options.get( 'toc-expand' ) ) {
-					$toggleSymbol
-						.text( '−' )
-						.attr( 'title', mw.msg( 'hidetoc' ) );
-
-					$subList.css( 'display', '' );
-				} else {
-					$toggleSymbol
-						.text( '+' )
-						.attr( 'title', mw.msg( 'showtoc' ) );
-
-					$subList.css( 'display', 'none' );
-				}
-				$toggleSymbol.on( 'click', processClickEvent );
-
-				$toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
-				$toggleSpan.append( '[', $toggleSymbol, ']' );
-
-				$( this ).prepend( $toggleSpan );
+				$subList.css( 'display', 'none' );
 			}
-		} );
-	}
+			$toggleSymbol.on( 'click', processClickEvent );
 
-	mw.hook( 'wikipage.content' ).add( init );
-}() );
+			$toggleSpan = $( '<span>' ).addClass( 'toggleNode' );
+			$toggleSpan.append( '[', $toggleSymbol, ']' );
+
+			$( this ).prepend( $toggleSpan );
+		}
+	} );
+}
+
+mw.hook( 'wikipage.content' ).add( init );
