@@ -8,7 +8,7 @@ namespace MediaWiki\Extension\TocTree;
 
 use ApiBase;
 use MediaWiki\Api\Hook\ApiParseMakeOutputPageHook;
-use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\User\User;
