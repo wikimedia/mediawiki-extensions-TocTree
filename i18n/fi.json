@@ -3,10 +3,12 @@
 		"authors": [
 			"01miki10",
 			"Nedergard",
-			"VezonThunder"
+			"VezonThunder",
+			"Samoasambia"
 		]
 	},
 	"toctree-desc": "Laajennus sisällysluettelon laajentamiseen ja tiivistämiseen",
 	"prefs-toctree": "Sisällysluettelo",
-	"toctree-tog-expand": "Ota käyttöön laajennettava sisällysluettelo"
+	"toctree-tog-expand": "Ota käyttöön laajennettava sisällysluettelo",
+	"toctree-tog-floated": "Kelluva sisällysluettelo"
 }
