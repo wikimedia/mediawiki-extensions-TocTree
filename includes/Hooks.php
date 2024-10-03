@@ -6,7 +6,7 @@
 
 namespace MediaWiki\Extension\TocTree;
 
-use ApiBase;
+use MediaWiki\Api\ApiBase;
 use MediaWiki\Api\Hook\ApiParseMakeOutputPageHook;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
