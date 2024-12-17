@@ -12,6 +12,7 @@ use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\Skin\Skin;
+use MediaWiki\Skin\SkinFactory;
 use MediaWiki\User\User;
 
 class Hooks implements
@@ -19,11 +20,22 @@ class Hooks implements
 	BeforePageDisplayHook,
 	GetPreferencesHook
 {
+	private SkinFactory $skinFactory;
+
+	public function __construct(
+		SkinFactory $skinFactory
+	) {
+		$this->skinFactory = $skinFactory;
+	}
+
 	/**
 	 * @param OutputPage $out
 	 */
 	private function addModules( OutputPage $out ) {
-		if ( $out->isTOCEnabled() ) {
+		if (
+			$out->isTOCEnabled() &&
+			$this->skinFactory->getSkinOptions( $out->getSkin()->getSkinName() )['toc']
+		) {
 			$out->addModules( 'ext.toctree' );
 		}
 	}

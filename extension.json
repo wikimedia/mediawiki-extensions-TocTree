@@ -46,7 +46,10 @@
 	},
 	"HookHandlers": {
 		"TocTreeHooks": {
-			"class": "MediaWiki\\Extension\\TocTree\\Hooks"
+			"class": "MediaWiki\\Extension\\TocTree\\Hooks",
+			"services": [
+				"SkinFactory"
+			]
 		}
 	},
 	"manifest_version": 2
