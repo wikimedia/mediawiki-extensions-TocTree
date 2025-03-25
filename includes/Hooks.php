@@ -11,8 +11,8 @@ use MediaWiki\Api\Hook\ApiParseMakeOutputPageHook;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\Skin\Skin;
 use MediaWiki\User\User;
-use Skin;
 
 class Hooks implements
 	ApiParseMakeOutputPageHook,
