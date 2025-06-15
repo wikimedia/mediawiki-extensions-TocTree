@@ -15,6 +15,9 @@ module.exports = function ( grunt ) {
 	grunt.initConfig( {
 		banana: conf.MessagesDirs,
 		stylelint: {
+			options: {
+				cache: true
+			},
 			all: [
 				'**/*.css',
 				'!node_modules/**',
