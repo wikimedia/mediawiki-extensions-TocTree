@@ -20,12 +20,9 @@ class Hooks implements
 	BeforePageDisplayHook,
 	GetPreferencesHook
 {
-	private SkinFactory $skinFactory;
-
 	public function __construct(
-		SkinFactory $skinFactory
+		private readonly SkinFactory $skinFactory,
 	) {
-		$this->skinFactory = $skinFactory;
 	}
 
 	/**
