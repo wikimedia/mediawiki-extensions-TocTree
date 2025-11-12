@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
-	"toctree-desc": "Extensão para a expansão e colapso do índice",
-	"prefs-toctree": "Índice",
-	"toctree-tog-expand": "Ativar o índice expansível",
-	"toctree-tog-floated": "Índice flutuante"
+	"toctree-desc": "Extensão para a expansão e ocultação da tabela de conteúdos",
+	"prefs-toctree": "Tabela de Conteúdos",
+	"toctree-tog-expand": "Ativar a tabela de conteúdos expansível",
+	"toctree-tog-floated": "Tabela de conteúdos flutuante"
 }
