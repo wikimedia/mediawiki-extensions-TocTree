@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"toctree-desc": "Rozšírenie na rozbaľovanie a zbaľovanie obsahu",
+	"prefs-toctree": "Obsah",
+	"toctree-tog-expand": "Zapnúť rozbaliteľný obsah",
+	"toctree-tog-floated": "Plávajúci obsah"
+}
